@@ -53,7 +53,7 @@ public class Enemy : MonoBehaviour
         GetComponent<Health>().OnDeath += OnEnemyDestroyed;
         GetComponent<Health>().OnHealthDecreased += OnHealthDeacreased;
     }
-
+    
     void Update() {
         if (!m_afterStart)
         {

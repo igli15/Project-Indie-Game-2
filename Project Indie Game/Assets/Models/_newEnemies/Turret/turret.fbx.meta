@@ -254,7 +254,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Shooting
       takeName: Take 001
-      firstFrame: 71
+      firstFrame: 72
       lastFrame: 85
       wrapMode: 0
       orientationOffsetY: 0

@@ -22,7 +22,6 @@ public class EnemyFSM : MonoBehaviour, IAgent {
 
     public void ChangeToInitialState()
     {
-        Debug.Log("ChangeToInitialState");
         switch (enemyTpe)
         {
             case EnemyType.GOOMBA:
@@ -52,7 +51,6 @@ public class EnemyFSM : MonoBehaviour, IAgent {
 
     void OnEnable()
     {
-        Debug.Log("OnEnabled");
         m_fsm = new Fsm<EnemyFSM>(this);
         ChangeToInitialState();
     }

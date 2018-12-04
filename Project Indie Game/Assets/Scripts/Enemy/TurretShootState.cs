@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TurretShootState : AbstractState<EnemyFSM> {
     private Enemy m_enemy;
+    private Animator m_animator;
     private EnemyFSM m_enemyFSM;
     private EnemyRangedAttack m_rangedAttack;
 
@@ -17,9 +18,11 @@ public class TurretShootState : AbstractState<EnemyFSM> {
 
     private void Start()
     {
+        Debug.Log("start");
         m_enemy = GetComponent<Enemy>();
         m_enemyFSM = GetComponent<EnemyFSM>();
         m_rangedAttack = GetComponent<EnemyRangedAttack>();
+        m_animator = m_enemy.animator;
 
         m_reloadTime = m_rangedAttack.reloadTime;
         m_enemy.sphereCollider.OnEnemyTriggerExit += OnPlayerExitSpehere;
@@ -38,14 +41,23 @@ public class TurretShootState : AbstractState<EnemyFSM> {
     public override void Enter(IAgent pAgent)
     {
         base.Enter(pAgent);
+        if (m_enemy == null)
+        {
+            m_enemy=GetComponent<Enemy>();
+            m_animator = m_enemy.animator;
+        }
+        Debug.Log("ENTER SHOOT STATE");
         m_attackIsAllowed = false;
+        m_animator.SetBool("attack", true);
         StartCoroutine( MoveToStaticMode(m_transferTime) );
     }
 
     public override void Exit(IAgent pAgent)
     {
         base.Exit(pAgent);
+        Debug.Log("EXIT SHOOT STATE");
         StopAllCoroutines();
+        m_enemy.animator.SetBool("attack", false);
         m_attackIsAllowed = false;
     }
 
