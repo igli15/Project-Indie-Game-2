@@ -51,6 +51,7 @@ public class Enemy : MonoBehaviour
         if (m_enemyRangedAttack != null) m_enemyRangedAttack.reloadTime = m_reloadTime;
 
         GetComponent<Health>().OnDeath += OnEnemyDestroyed;
+        GetComponent<Health>().OnHealthDecreased += OnHealthDeacreased;
     }
 
     void Update() {
@@ -61,8 +62,9 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
+    void OnHealthDeacreased(Health health)
     {
+        m_animator.SetTrigger("damage");
     }
 
     public void OnEnemyDestroyed(Health health)
