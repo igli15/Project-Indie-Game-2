@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
 {
     [Header("Stats")]
     [SerializeField]
+    private float m_timeBeforeDestroy = 1;
+    [SerializeField]
     private float m_moveSpeed = 5;
     //[SerializeField]
     private float m_reloadTime = 0.5f;
@@ -65,10 +67,22 @@ public class Enemy : MonoBehaviour
 
     public void OnEnemyDestroyed(Health health)
     {
+        m_animator.SetTrigger("death");
+        GetComponent<EnemyFSM>().fsm.ChangeState<EnemyDisabledState>();
+        StartCoroutine(WaitBeforeDestroy(m_timeBeforeDestroy));
+            
+        health.ResetHealth();
+    }
+
+    IEnumerator WaitBeforeDestroy(float delayTime)
+    {
+
+        yield return new WaitForSecondsRealtime(delayTime);
+
         if (onEnemyDestroyed != null) onEnemyDestroyed();
         onEnemyDestroyed = null;
-        health.ResetHealth();
-        string tag="";
+        
+        string tag = "";
         switch (GetComponent<EnemyFSM>().enemyTpe)
         {
             case EnemyFSM.EnemyType.GOOMBA:
@@ -78,8 +92,9 @@ public class Enemy : MonoBehaviour
                 tag = "Turret";
                 break;
         }
+
         GetComponent<EnemyLoot>().DropItem(m_percantageOfDropingLoot);
-        ObjectPooler.instance.DestroyFromPool(tag,gameObject);
+        ObjectPooler.instance.DestroyFromPool(tag, gameObject);
     }
 
     public Animator animator { get { return m_animator; } }
