@@ -278,6 +278,7 @@
             <e p="CompanionEffects.cs" t="Include" />
             <e p="CompanionSteering.cs" t="Include" />
             <e p="RushCompanion.cs" t="Include" />
+            <e p="RushEffects.cs" t="Include" />
             <e p="RushHitbox.cs" t="Include" />
             <e p="SeekerCompanion.cs" t="Include" />
             <e p="SeekerEffects.cs" t="Include" />

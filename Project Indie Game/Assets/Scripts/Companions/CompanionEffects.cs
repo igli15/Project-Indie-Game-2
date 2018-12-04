@@ -22,7 +22,6 @@ public class CompanionEffects : MonoBehaviour
 
 	protected void EnableChargeEffect(ACompanion companion,float time)
 	{
-		Debug.Log("GEEGE");
 		m_chargeParticleSystem.transform.parent.gameObject.SetActive(true);
 		
 		var main = m_chargeParticleSystem.main;
