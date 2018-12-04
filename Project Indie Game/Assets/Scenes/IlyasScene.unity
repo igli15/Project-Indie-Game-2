@@ -1468,17 +1468,25 @@ MonoBehaviour:
   m_spawnRadius: 1
   m_enemyZone: {fileID: 506153272}
   m_waves:
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
+    numberOfTurrets: 1
+  - numberOfGoombas: 0
+    numberOfTurrets: 1
+  - numberOfGoombas: 0
+    numberOfTurrets: 1
+  - numberOfGoombas: 0
+    numberOfTurrets: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
 --- !u!1 &1052593516
 GameObject:
@@ -1722,6 +1730,11 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114610834450143686, guid: 7a02d77f6b2deff45b0d3b6b8cf46c94,
+        type: 2}
+      propertyPath: m_timeBeforeDestroy
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a02d77f6b2deff45b0d3b6b8cf46c94, type: 2}
   m_IsPrefabParent: 0
@@ -1842,17 +1855,25 @@ MonoBehaviour:
   m_spawnRadius: 1
   m_enemyZone: {fileID: 506153272}
   m_waves:
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
+    numberOfTurrets: 1
+  - numberOfGoombas: 0
+    numberOfTurrets: 1
+  - numberOfGoombas: 0
+    numberOfTurrets: 1
+  - numberOfGoombas: 0
+    numberOfTurrets: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
 --- !u!1 &1378054572
 GameObject:
@@ -2560,17 +2581,25 @@ MonoBehaviour:
   m_spawnRadius: 1
   m_enemyZone: {fileID: 506153272}
   m_waves:
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
-  - numberOfGoombas: 1
+  - numberOfGoombas: 0
+    numberOfTurrets: 1
+  - numberOfGoombas: 0
+    numberOfTurrets: 1
+  - numberOfGoombas: 0
+    numberOfTurrets: 1
+  - numberOfGoombas: 0
+    numberOfTurrets: 1
+  - numberOfGoombas: 0
     numberOfTurrets: 1
 --- !u!1 &1774947122
 GameObject:
