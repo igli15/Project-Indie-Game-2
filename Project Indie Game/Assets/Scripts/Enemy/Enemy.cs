@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
 
     [Header("Other")]
     [SerializeField]
+    private Animator m_animator;
+    [SerializeField]
     private EnemyDamageCollider m_enemyDamageCollider;
     [SerializeField]
     private EnemyDamageCollider m_sphereCollider;
@@ -80,6 +82,7 @@ public class Enemy : MonoBehaviour
         ObjectPooler.instance.DestroyFromPool(tag,gameObject);
     }
 
+    public Animator animator { get { return m_animator; } }
     public GameObject target{ get { return m_target; } }
     public EnemyDamageCollider damageCollider { get { return m_enemyDamageCollider; } }
     public EnemyDamageCollider sphereCollider { get { return m_sphereCollider; } }
