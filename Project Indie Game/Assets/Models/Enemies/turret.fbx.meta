@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 1b845f50fc74ebd4fa76394c7c68c18d
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Character1
+    100002: joint1
+    100004: joint10
+    100006: joint11
+    100008: joint12
+    100010: joint2
+    100012: joint3
+    100014: joint4
+    100016: joint5
+    100018: joint6
+    100020: joint7
+    100022: joint8
+    100024: joint9
+    100026: L_LeafBase
+    100028: L_LeafBottom
+    100030: L_LeafBottom1
+    100032: L_LeafBottom2
+    100034: L_LeafBottomTip
+    100036: L_LeafMiddle
+    100038: L_LeafMiddle1
+    100040: L_LeafMiddle2
+    100042: L_LeafMiddleTip
+    100044: L_LeafTop
+    100046: L_LeafTop1
+    100048: L_LeafTop2
+    100050: L_LeafTopTip
+    100052: Neck
+    100054: R_LeafBase
+    100056: R_LeafBottom
+    100058: R_LeafBottom1
+    100060: R_LeafBottom2
+    100062: R_LeafBottomTip
+    100064: R_LeafMiddle
+    100066: R_LeafMiddle1
+    100068: R_LeafMiddle2
+    100070: R_LeafMiddleTip
+    100072: R_LeafTop
+    100074: R_LeafTop1
+    100076: R_LeafTop2
+    100078: R_LeafTopTip
+    100080: Spine
+    100082: Spine2
+    100084: Spine3
+    100086: Spine4
+    100088: Spine5
+    100090: Spine6
+    100092: Spine7
+    100094: SpineTip
+    100096: //RootNode
+    400000: Character1
+    400002: joint1
+    400004: joint10
+    400006: joint11
+    400008: joint12
+    400010: joint2
+    400012: joint3
+    400014: joint4
+    400016: joint5
+    400018: joint6
+    400020: joint7
+    400022: joint8
+    400024: joint9
+    400026: L_LeafBase
+    400028: L_LeafBottom
+    400030: L_LeafBottom1
+    400032: L_LeafBottom2
+    400034: L_LeafBottomTip
+    400036: L_LeafMiddle
+    400038: L_LeafMiddle1
+    400040: L_LeafMiddle2
+    400042: L_LeafMiddleTip
+    400044: L_LeafTop
+    400046: L_LeafTop1
+    400048: L_LeafTop2
+    400050: L_LeafTopTip
+    400052: Neck
+    400054: R_LeafBase
+    400056: R_LeafBottom
+    400058: R_LeafBottom1
+    400060: R_LeafBottom2
+    400062: R_LeafBottomTip
+    400064: R_LeafMiddle
+    400066: R_LeafMiddle1
+    400068: R_LeafMiddle2
+    400070: R_LeafMiddleTip
+    400072: R_LeafTop
+    400074: R_LeafTop1
+    400076: R_LeafTop2
+    400078: R_LeafTopTip
+    400080: Spine
+    400082: Spine2
+    400084: Spine3
+    400086: Spine4
+    400088: Spine5
+    400090: Spine6
+    400092: Spine7
+    400094: SpineTip
+    400096: //RootNode
+    2100000: shooter_mat
+    4300000: Character1
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Character1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

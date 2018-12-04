@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: 92a3e1851bedd5e42895edb82415717f
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Head
+    100004: HeadTip
+    100006: MasterCTRL
+    100008: Neck
+    100010: pCube18
+    100012: R_LegBack1
+    100014: R_LegBack1 1
+    100016: R_LegBack2
+    100018: R_LegBack2 1
+    100020: R_LegBack3
+    100022: R_LegBack3 1
+    100024: R_LegBackTip
+    100026: R_LegBackTip 1
+    100028: R_LegFront1
+    100030: R_LegFront1 1
+    100032: R_LegFront2
+    100034: R_LegFront2 1
+    100036: R_LegFront3
+    100038: R_LegFront3 1
+    100040: R_LegFrontTip
+    100042: R_LegFrontTip 1
+    100044: R_LegMiddle1
+    100046: R_LegMiddle1 1
+    100048: R_LegMiddle2
+    100050: R_LegMiddle2 1
+    100052: R_LegMiddle3
+    100054: R_LegMiddle3 1
+    100056: R_LegMiddleTip
+    100058: R_LegMiddleTip 1
+    100060: R_Shell1
+    100062: R_Shell1 1
+    100064: R_ShellTip
+    100066: R_ShellTip 1
+    100068: R_Wing1
+    100070: R_Wing1 1
+    100072: R_WingTip
+    100074: R_WingTip 1
+    100076: Spine1
+    100078: Spine2
+    100080: Spine3
+    100082: SpineTip
+    100084: transform13
+    100086: transform14
+    100088: transform16
+    100090: transform8
+    100092: transform9
+    400000: //RootNode
+    400002: Head
+    400004: HeadTip
+    400006: MasterCTRL
+    400008: Neck
+    400010: pCube18
+    400012: R_LegBack1
+    400014: R_LegBack1 1
+    400016: R_LegBack2
+    400018: R_LegBack2 1
+    400020: R_LegBack3
+    400022: R_LegBack3 1
+    400024: R_LegBackTip
+    400026: R_LegBackTip 1
+    400028: R_LegFront1
+    400030: R_LegFront1 1
+    400032: R_LegFront2
+    400034: R_LegFront2 1
+    400036: R_LegFront3
+    400038: R_LegFront3 1
+    400040: R_LegFrontTip
+    400042: R_LegFrontTip 1
+    400044: R_LegMiddle1
+    400046: R_LegMiddle1 1
+    400048: R_LegMiddle2
+    400050: R_LegMiddle2 1
+    400052: R_LegMiddle3
+    400054: R_LegMiddle3 1
+    400056: R_LegMiddleTip
+    400058: R_LegMiddleTip 1
+    400060: R_Shell1
+    400062: R_Shell1 1
+    400064: R_ShellTip
+    400066: R_ShellTip 1
+    400068: R_Wing1
+    400070: R_Wing1 1
+    400072: R_WingTip
+    400074: R_WingTip 1
+    400076: Spine1
+    400078: Spine2
+    400080: Spine3
+    400082: SpineTip
+    400084: transform13
+    400086: transform14
+    400088: transform16
+    400090: transform8
+    400092: transform9
+    2100000: scarab_mat_1
+    4300000: pCube18
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: pCube18
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

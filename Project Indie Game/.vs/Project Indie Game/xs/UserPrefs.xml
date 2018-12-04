@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{4B750AAA-A7F4-9CC4-A926-1320902E5D46}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerAnimations.cs">
+    <Files>
+      <File FileName="Assets/Scripts/CameraFollow.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Companions/SeekerCompanion.cs" Line="37" Column="1" />
+      <File FileName="Assets/Scripts/Enemy/FSM States/EnemySeekState.cs" Line="27" Column="1" />
+      <File FileName="Assets/Scripts/Enemy/FSM States/EnemyMeleeState.cs" Line="15" Column="1" />
+      <File FileName="Assets/Scripts/Companions/Companion.cs" Line="139" Column="34" />
+      <File FileName="Assets/Scripts/Player/CompanionController.cs" Line="97" Column="1" />
+      <File FileName="Assets/Scripts/Companions/RushHitbox.cs" Line="26" Column="1" />
+      <File FileName="Assets/Scripts/Enemy/EnemyMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Companions/SniperCompanion.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemy/EnemyMeleeAttack.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Companions/RushCompanion.cs" Line="11" Column="19" />
+      <File FileName="Assets/Scripts/Companions/ACompanion.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Companions/CompanionSteering.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/DashBehaviour.cs" Line="17" Column="1" />
+      <File FileName="Assets/Scripts/Companions/BlackHole.cs" Line="58" Column="1" />
+      <File FileName="Assets/Scripts/Player/CompanionManager.cs" Line="45" Column="47" />
+      <File FileName="Assets/Scripts/Player/Healthbar.cs" Line="17" Column="1" />
+      <File FileName="Assets/Scripts/Player/PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/HudScripts/RotateTowardsGoal.cs" Line="17" Column="1" />
+      <File FileName="Assets/Scripts/HudScripts/HudManager.cs" Line="73" Column="1" />
+      <File FileName="Assets/Scripts/HudScripts/Cursor.cs" Line="19" Column="2" />
+      <File FileName="Assets/Scripts/Enemy/Manager/EnemySpawner.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Companions/BlackHoleCompanion.cs" Line="21" Column="18" />
+      <File FileName="Assets/Scripts/Player/Player.cs" Line="20" Column="37" />
+      <File FileName="Assets/Scripts/Player/PlayerAnimations.cs" Line="14" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

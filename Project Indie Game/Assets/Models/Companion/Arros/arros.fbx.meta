@@ -1,0 +1,261 @@
+fileFormatVersion: 2
+guid: 3f3ee5c7db18e416ca7bee55b5c0cfd2
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Blackhole_rigged_0012:scarab_0161:Head
+    100004: Blackhole_rigged_0012:scarab_0161:HeadTip
+    100006: Blackhole_rigged_0012:scarab_0161:Neck
+    100008: Blackhole_rigged_0012:scarab_0161:R_LegFront1
+    100010: Blackhole_rigged_0012:scarab_0161:R_LegFront1 1
+    100012: Blackhole_rigged_0012:scarab_0161:R_LegFront2
+    100014: Blackhole_rigged_0012:scarab_0161:R_LegFront2 1
+    100016: Blackhole_rigged_0012:scarab_0161:R_LegFront3
+    100018: Blackhole_rigged_0012:scarab_0161:R_LegFront3 1
+    100020: Blackhole_rigged_0012:scarab_0161:R_LegFrontTip
+    100022: Blackhole_rigged_0012:scarab_0161:R_LegFrontTip 1
+    100024: Blackhole_rigged_0012:scarab_0161:R_LegMiddle1
+    100026: Blackhole_rigged_0012:scarab_0161:R_LegMiddle1 1
+    100028: Blackhole_rigged_0012:scarab_0161:R_LegMiddle2
+    100030: Blackhole_rigged_0012:scarab_0161:R_LegMiddle2 1
+    100032: Blackhole_rigged_0012:scarab_0161:R_LegMiddle3
+    100034: Blackhole_rigged_0012:scarab_0161:R_LegMiddle3 1
+    100036: Blackhole_rigged_0012:scarab_0161:R_LegMiddleTip
+    100038: Blackhole_rigged_0012:scarab_0161:R_LegMiddleTip 1
+    100040: Blackhole_rigged_0012:scarab_0161:R_Wing1
+    100042: Blackhole_rigged_0012:scarab_0161:R_Wing1 1
+    100044: Blackhole_rigged_0012:scarab_0161:R_WingTip
+    100046: Blackhole_rigged_0012:scarab_0161:R_WingTip 1
+    100048: Blackhole_rigged_0012:scarab_0161:transform13
+    100050: Blackhole_rigged_0012:scarab_0161:transform14
+    100052: Blackhole_rigged_0012:scarab_0161:transform16
+    100054: Blackhole_rigged_0012:scarab_0161:transform8
+    100056: Bug_base1_remember_to_save_copies_of_bug_base_legs_back_group6
+    100058: MasterCTRL
+    100060: R_Leg_ack1
+    100062: R_Leg_ack1 1
+    100064: R_Leg_ack2
+    100066: R_Leg_ack2 1
+    100068: R_Leg_ack3
+    100070: R_Leg_ack3 1
+    100072: R_Leg_ackTip
+    100074: R_Leg_ackTip 1
+    100076: Spine1
+    100078: Spine2
+    100080: Spine3
+    100082: SpineTip
+    400000: //RootNode
+    400002: Blackhole_rigged_0012:scarab_0161:Head
+    400004: Blackhole_rigged_0012:scarab_0161:HeadTip
+    400006: Blackhole_rigged_0012:scarab_0161:Neck
+    400008: Blackhole_rigged_0012:scarab_0161:R_LegFront1
+    400010: Blackhole_rigged_0012:scarab_0161:R_LegFront1 1
+    400012: Blackhole_rigged_0012:scarab_0161:R_LegFront2
+    400014: Blackhole_rigged_0012:scarab_0161:R_LegFront2 1
+    400016: Blackhole_rigged_0012:scarab_0161:R_LegFront3
+    400018: Blackhole_rigged_0012:scarab_0161:R_LegFront3 1
+    400020: Blackhole_rigged_0012:scarab_0161:R_LegFrontTip
+    400022: Blackhole_rigged_0012:scarab_0161:R_LegFrontTip 1
+    400024: Blackhole_rigged_0012:scarab_0161:R_LegMiddle1
+    400026: Blackhole_rigged_0012:scarab_0161:R_LegMiddle1 1
+    400028: Blackhole_rigged_0012:scarab_0161:R_LegMiddle2
+    400030: Blackhole_rigged_0012:scarab_0161:R_LegMiddle2 1
+    400032: Blackhole_rigged_0012:scarab_0161:R_LegMiddle3
+    400034: Blackhole_rigged_0012:scarab_0161:R_LegMiddle3 1
+    400036: Blackhole_rigged_0012:scarab_0161:R_LegMiddleTip
+    400038: Blackhole_rigged_0012:scarab_0161:R_LegMiddleTip 1
+    400040: Blackhole_rigged_0012:scarab_0161:R_Wing1
+    400042: Blackhole_rigged_0012:scarab_0161:R_Wing1 1
+    400044: Blackhole_rigged_0012:scarab_0161:R_WingTip
+    400046: Blackhole_rigged_0012:scarab_0161:R_WingTip 1
+    400048: Blackhole_rigged_0012:scarab_0161:transform13
+    400050: Blackhole_rigged_0012:scarab_0161:transform14
+    400052: Blackhole_rigged_0012:scarab_0161:transform16
+    400054: Blackhole_rigged_0012:scarab_0161:transform8
+    400056: Bug_base1_remember_to_save_copies_of_bug_base_legs_back_group6
+    400058: MasterCTRL
+    400060: R_Leg_ack1
+    400062: R_Leg_ack1 1
+    400064: R_Leg_ack2
+    400066: R_Leg_ack2 1
+    400068: R_Leg_ack3
+    400070: R_Leg_ack3 1
+    400072: R_Leg_ackTip
+    400074: R_Leg_ackTip 1
+    400076: Spine1
+    400078: Spine2
+    400080: Spine3
+    400082: SpineTip
+    2100000: lambert1
+    4300000: Bug_base1_remember_to_save_copies_of_bug_base_legs_back_group6
+    7400000: Walk
+    7400002: Idle
+    7400004: Throw
+    9500000: //RootNode
+    13700000: Bug_base1_remember_to_save_copies_of_bug_base_legs_back_group6
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 20
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Throw
+      takeName: Take 001
+      firstFrame: 39
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Bug_base1_remember_to_save_copies_of_bug_base_legs_back_group6
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
