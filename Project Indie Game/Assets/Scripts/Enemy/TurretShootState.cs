@@ -62,8 +62,8 @@ public class TurretShootState : AbstractState<EnemyFSM> {
     }
 
     void Update () {
-        
 
+        transform.LookAt(m_enemy.target.transform);
     }
 
     IEnumerator Shoot()

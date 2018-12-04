@@ -74,7 +74,7 @@ public class ObjectPooler : MonoBehaviour
        	{
         //GameObject objToDestroy = poolDictionary[pTag].Dequeue();
 
-       		objToDestroy.SetActive(false);
+       	objToDestroy.SetActive(false);
 
         if (!poolDictionary[pTag].Contains(objToDestroy))
             poolDictionary[pTag].Enqueue(objToDestroy);
