@@ -22,7 +22,7 @@ public class DummyDamage : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
     {
-        if (!other.CompareTag("Enemy")||!m_attack) return;
+        if (!other.CompareTag("Enemy")) return;
 
         other.GetComponent<Health>().InflictDamage(damage);
         m_attack = false;

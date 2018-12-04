@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
     private EnemyRangedAttack m_enemyRangedAttack;
 
     private bool m_afterStart = false;
-    private bool m_waitingBeforeDestroy = false;
+    //private bool m_waitingBeforeDestroy = false;
 
     public Action onEnemyDestroyed;
 
@@ -70,8 +70,8 @@ public class Enemy : MonoBehaviour
 
     public void OnEnemyDestroyed(Health health)
     {
-        if (m_waitingBeforeDestroy) return;
-        m_waitingBeforeDestroy = true;
+        //if (m_waitingBeforeDestroy) return;
+//m_waitingBeforeDestroy = true;
         m_animator.SetBool("death", true);
         GetComponent<EnemyFSM>().fsm.ChangeState<EnemyDisabledState>();
         StartCoroutine(WaitBeforeDestroy(m_timeBeforeDestroy));
@@ -97,7 +97,7 @@ public class Enemy : MonoBehaviour
                 tag = "Turret";
                 break;
         }
-
+        GetComponent<EnemyFSM>().ChangeToInitialState();
         GetComponent<EnemyLoot>().DropItem(m_percantageOfDropingLoot);
         ObjectPooler.instance.DestroyFromPool(tag, gameObject);
     }

@@ -22,6 +22,7 @@ public class EnemyFSM : MonoBehaviour, IAgent {
 
     public void ChangeToInitialState()
     {
+        Debug.Log("INIT STATE");
         switch (enemyTpe)
         {
             case EnemyType.GOOMBA:

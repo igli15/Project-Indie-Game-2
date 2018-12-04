@@ -1659,8 +1659,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.8001364, y: 6.1134396, z: 1.8441195}
+  m_Center: {x: -0.40006542, y: 2.5567198, z: -0.42206}
 --- !u!65 &65061323153762144
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1671,8 +1671,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 5.1857815, z: 1.9268568}
+  m_Center: {x: 1.7144153e-10, y: 2.0928907, z: -0.46342885}
 --- !u!95 &95977914710622878
 Animator:
   serializedVersion: 3
@@ -1874,7 +1874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92382bce60381f147902ac118fa2706e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_timeBeforeDestroy: 1.5
+  m_timeBeforeDestroy: 2
   m_moveSpeed: 5
   m_pushPower: 2
   m_percantageOfDropingLoot: 25
@@ -2217,7 +2217,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 4.02}
   m_SizeDelta: {x: 8, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224968193349724406
