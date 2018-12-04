@@ -99,7 +99,10 @@ public class Enemy : MonoBehaviour
         }
         GetComponent<EnemyFSM>().ChangeToInitialState();
         GetComponent<EnemyLoot>().DropItem(m_percantageOfDropingLoot);
+        GetComponent<Health>().CanTakeDamage = true;
         ObjectPooler.instance.DestroyFromPool(tag, gameObject);
+
+
     }
 
     public Animator animator { get { return m_animator; } }

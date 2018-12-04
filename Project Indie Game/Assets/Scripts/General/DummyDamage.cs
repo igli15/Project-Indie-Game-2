@@ -17,6 +17,7 @@ public class DummyDamage : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.L))
         {
             m_attack = true;
+            transform.position += transform.forward * 0.1f;
         }
 	}
 

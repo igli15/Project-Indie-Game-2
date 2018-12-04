@@ -34,7 +34,6 @@ public class TurretShootState : AbstractState<EnemyFSM> {
         {
             Debug.Log("EXIT OF PLAYER");
             StartCoroutine(MoveToPortableMode(m_transferTime));
-  
         }
     }
 

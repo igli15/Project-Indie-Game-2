@@ -348,10 +348,10 @@ MonoBehaviour:
     size: 300
   - tag: Goomba
     prefab: {fileID: 1356805430267124, guid: c9d046c652a5bc742a0c1b341cbbe4a3, type: 2}
-    size: 0
+    size: 5
   - tag: Turret
     prefab: {fileID: 1133601379900244, guid: 7a02d77f6b2deff45b0d3b6b8cf46c94, type: 2}
-    size: 1
+    size: 5
 --- !u!4 &257879488
 Transform:
   m_ObjectHideFlags: 0
@@ -563,8 +563,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2b88f705ae6b740b5e144d1eea3433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_destroyEnemiesAfterPlayerLeaves: 0
-  m_showPopUps: 1
+  m_destroyEnemiesAfterPlayerLeaves: 1
+  m_showPopUps: 0
   isZoneCleared: 0
   isPlayerInsideZone: 0
 --- !u!65 &506153273
@@ -1484,10 +1484,6 @@ MonoBehaviour:
     numberOfTurrets: 5
   - numberOfGoombas: 3
     numberOfTurrets: 5
-  - numberOfGoombas: 3
-    numberOfTurrets: 5
-  - numberOfGoombas: 3
-    numberOfTurrets: 5
 --- !u!1 &1052593516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1854,46 +1850,12 @@ MonoBehaviour:
   m_spawnRadius: 1
   m_enemyZone: {fileID: 506153272}
   m_waves:
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
-  - numberOfGoombas: 0
-    numberOfTurrets: 1
+  - numberOfGoombas: 5
+    numberOfTurrets: 5
+  - numberOfGoombas: 5
+    numberOfTurrets: 5
+  - numberOfGoombas: 5
+    numberOfTurrets: 5
 --- !u!1 &1378054572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2600,10 +2562,6 @@ MonoBehaviour:
   m_spawnRadius: 1
   m_enemyZone: {fileID: 506153272}
   m_waves:
-  - numberOfGoombas: 3
-    numberOfTurrets: 5
-  - numberOfGoombas: 3
-    numberOfTurrets: 5
   - numberOfGoombas: 3
     numberOfTurrets: 5
   - numberOfGoombas: 3
