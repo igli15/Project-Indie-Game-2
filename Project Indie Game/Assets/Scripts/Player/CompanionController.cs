@@ -65,7 +65,7 @@ public class CompanionController : MonoBehaviour
 		{
 			m_manager.DropCompanion(m_manager.GetSelectedCompanion());
 		}
-		
+
 	}
 
 	private void HandleScrollWheel()

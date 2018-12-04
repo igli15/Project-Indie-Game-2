@@ -23,8 +23,8 @@ public class PlayerAnimations : MonoBehaviour
 		m_health.OnHealthDecreased += health => m_animator.SetTrigger("isDamaged");
 		m_health.OnDeath += health => m_animator.SetTrigger("isDead"); 
 		m_dashBehaviour.OnDash += behaviour => m_animator.SetTrigger("dash");
-		
-		CompanionController.OnCompanionThrown += (controller, companion) => m_animator.SetTrigger("attackCommand");
+
+		CompanionController.OnCompanionThrown += SetTriggerToAttackCommand;
 	}
 	
 	// Update is called once per frame
@@ -32,5 +32,15 @@ public class PlayerAnimations : MonoBehaviour
 	{
 		m_animator.SetFloat("velocity",m_player.MoveSpeed);
 		m_animator.SetBool("inputIsGiven",m_player.InputIsGiven);
+	}
+
+	public void SetTriggerToAttackCommand(CompanionController controller,ACompanion companion)
+	{
+		m_animator.SetTrigger("attackCommand");
+	}
+
+	private void OnDestroy()
+	{
+		CompanionController.OnCompanionThrown -= SetTriggerToAttackCommand;
 	}
 }

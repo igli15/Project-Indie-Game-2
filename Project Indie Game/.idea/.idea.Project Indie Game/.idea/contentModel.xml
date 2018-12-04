@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="/6aaef9f6" t="IncludeRecursive" />
     <e p="/app" t="IncludeRecursive" />
-    <e p="/e3b27c9e" t="IncludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
@@ -265,17 +265,26 @@
           <e p="AchievementPopUp.cs" t="Include" />
           <e p="AimProjector.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
+          <e p="Collectalbes" t="Include">
+            <e p="Collectable.cs" t="Include" />
+            <e p="HealthPotions.cs" t="Include" />
+          </e>
           <e p="Companions" t="Include">
             <e p="ACompanion.cs" t="Include" />
             <e p="BlackHole.cs" t="Include" />
             <e p="BlackHoleCompanion.cs" t="Include" />
             <e p="Companion.cs" t="Include" />
             <e p="CompanionAnimation.cs" t="Include" />
+            <e p="CompanionEffects.cs" t="Include" />
             <e p="CompanionSteering.cs" t="Include" />
             <e p="RushCompanion.cs" t="Include" />
             <e p="RushHitbox.cs" t="Include" />
             <e p="SeekerCompanion.cs" t="Include" />
             <e p="SniperCompanion.cs" t="Include" />
+            <e p="SniperEffects.cs" t="Include" />
+          </e>
+          <e p="Compedex" t="Include">
+            <e p="CompanionButton.cs" t="Include" />
           </e>
           <e p="DummyScripts" t="Include">
             <e p="DummyMoveScript.cs" t="Include" />
@@ -286,6 +295,7 @@
             <e p="EnemyDamageCollider.cs" t="Include" />
             <e p="EnemyFSM.cs" t="Include" />
             <e p="EnemyHealthDisplay.cs" t="Include" />
+            <e p="EnemyLoot.cs" t="Include" />
             <e p="EnemyMeleeAttack.cs" t="Include" />
             <e p="EnemyMovement.cs" t="Include" />
             <e p="EnemyRangedAttack.cs" t="Include" />
@@ -321,6 +331,8 @@
           </e>
           <e p="HudScripts" t="Include">
             <e p="ChargeBar.cs" t="Include" />
+            <e p="CompedexDescription.cs" t="Include" />
+            <e p="CompedexSwitch.cs" t="Include" />
             <e p="Cursor.cs" t="Include" />
             <e p="HudManager.cs" t="Include" />
             <e p="RespawnIconScript.cs" t="Include" />
@@ -335,6 +347,7 @@
             <e p="PlayerAnimations.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
           </e>
+          <e p="Tavern.cs" t="Include" />
         </e>
         <e p="Seamless Textures (Realistic)" t="Include">
           <e p="Read Me.txt" t="Include" />
@@ -375,7 +388,7 @@
       </e>
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_Project Indie Game.795068681.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_Project Indie Game.-1486886869.00" t="ExcludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
   </component>
 </project>
