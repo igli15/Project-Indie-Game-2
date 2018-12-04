@@ -6,18 +6,23 @@ public class CompanionEffects : MonoBehaviour
 {
 	
 	[SerializeField] 
-	private ParticleSystem m_chargeParticleSystem; 
+	private ParticleSystem m_chargeParticleSystem;
 
+	protected ACompanion m_companion;
+	
 	// Use this for initialization
 	protected void Start ()
 	{
-		CompanionController.OnMouseCharging += EnableChargeEffect;
-		CompanionController.OnMouseRelease += DisableChargeEffect;
+		m_companion = GetComponent<ACompanion>();
+		
+		m_companion.OnCharging += EnableChargeEffect;
+		m_companion.OnChargeInterrupted += DisableChargeEffect;
 		
 	}
 
-	protected void EnableChargeEffect(CompanionController controller,ACompanion companion)
+	protected void EnableChargeEffect(ACompanion companion,float time)
 	{
+		Debug.Log("GEEGE");
 		m_chargeParticleSystem.transform.parent.gameObject.SetActive(true);
 		
 		var main = m_chargeParticleSystem.main;
@@ -39,14 +44,10 @@ public class CompanionEffects : MonoBehaviour
 		main.simulationSpeed = simSpeed;
 	}
 
-	protected void DisableChargeEffect(CompanionController controller, ACompanion companion)
+	protected void DisableChargeEffect(ACompanion companion,float time)
 	{
 		m_chargeParticleSystem.transform.parent.gameObject.SetActive(false);
 	}
 
-	private void OnDestroy()
-	{
-		CompanionController.OnMouseCharging -= EnableChargeEffect;
-		CompanionController.OnMouseRelease -= DisableChargeEffect;
-	}
+
 }

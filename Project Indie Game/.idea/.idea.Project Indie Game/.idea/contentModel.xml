@@ -280,6 +280,7 @@
             <e p="RushCompanion.cs" t="Include" />
             <e p="RushHitbox.cs" t="Include" />
             <e p="SeekerCompanion.cs" t="Include" />
+            <e p="SeekerEffects.cs" t="Include" />
             <e p="SniperCompanion.cs" t="Include" />
             <e p="SniperEffects.cs" t="Include" />
           </e>
