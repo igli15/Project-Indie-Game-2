@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
 {
     [Header("Stats")]
     [SerializeField]
+    private float m_timeBeforeDestroy = 1;
+    [SerializeField]
     private float m_moveSpeed = 5;
     //[SerializeField]
     private float m_reloadTime = 0.5f;
@@ -17,6 +19,8 @@ public class Enemy : MonoBehaviour
     private float m_percantageOfDropingLoot = 10;
 
     [Header("Other")]
+    [SerializeField]
+    private Animator m_animator;
     [SerializeField]
     private EnemyDamageCollider m_enemyDamageCollider;
     [SerializeField]
@@ -47,6 +51,7 @@ public class Enemy : MonoBehaviour
         if (m_enemyRangedAttack != null) m_enemyRangedAttack.reloadTime = m_reloadTime;
 
         GetComponent<Health>().OnDeath += OnEnemyDestroyed;
+        GetComponent<Health>().OnHealthDecreased += OnHealthDeacreased;
     }
 
     void Update() {
@@ -57,16 +62,29 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
+    void OnHealthDeacreased(Health health)
     {
+        m_animator.SetTrigger("damage");
     }
 
     public void OnEnemyDestroyed(Health health)
     {
+        m_animator.SetTrigger("death");
+        GetComponent<EnemyFSM>().fsm.ChangeState<EnemyDisabledState>();
+        StartCoroutine(WaitBeforeDestroy(m_timeBeforeDestroy));
+            
+        health.ResetHealth();
+    }
+
+    IEnumerator WaitBeforeDestroy(float delayTime)
+    {
+
+        yield return new WaitForSecondsRealtime(delayTime);
+
         if (onEnemyDestroyed != null) onEnemyDestroyed();
         onEnemyDestroyed = null;
-        health.ResetHealth();
-        string tag="";
+        
+        string tag = "";
         switch (GetComponent<EnemyFSM>().enemyTpe)
         {
             case EnemyFSM.EnemyType.GOOMBA:
@@ -76,10 +94,12 @@ public class Enemy : MonoBehaviour
                 tag = "Turret";
                 break;
         }
+
         GetComponent<EnemyLoot>().DropItem(m_percantageOfDropingLoot);
-        ObjectPooler.instance.DestroyFromPool(tag,gameObject);
+        ObjectPooler.instance.DestroyFromPool(tag, gameObject);
     }
 
+    public Animator animator { get { return m_animator; } }
     public GameObject target{ get { return m_target; } }
     public EnemyDamageCollider damageCollider { get { return m_enemyDamageCollider; } }
     public EnemyDamageCollider sphereCollider { get { return m_sphereCollider; } }
