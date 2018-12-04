@@ -18,6 +18,5 @@ public class EnemyLoot : MonoBehaviour {
             Debug.Log("DROP");
             Instantiate(m_itemToDrop, transform.position, transform.rotation);
         }
-        else Debug.Log("FAIL");
     }
 }

@@ -17,12 +17,13 @@ public class DummyDamage : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.L))
         {
             m_attack = true;
+            transform.position += transform.forward * 0.1f;
         }
 	}
 
     private void OnTriggerStay(Collider other)
     {
-        if (!other.CompareTag("Enemy")||!m_attack) return;
+        if (!other.CompareTag("Enemy")) return;
 
         other.GetComponent<Health>().InflictDamage(damage);
         m_attack = false;

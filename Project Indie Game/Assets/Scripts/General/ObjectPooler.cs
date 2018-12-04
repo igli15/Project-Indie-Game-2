@@ -73,8 +73,8 @@ public class ObjectPooler : MonoBehaviour
 	public void DestroyFromPool(string pTag,GameObject objToDestroy)
        	{
         //GameObject objToDestroy = poolDictionary[pTag].Dequeue();
-       Debug.Log("SIZE: "+ poolDictionary[pTag].Count );
-       		objToDestroy.SetActive(false);
+
+       	objToDestroy.SetActive(false);
 
         if (!poolDictionary[pTag].Contains(objToDestroy))
             poolDictionary[pTag].Enqueue(objToDestroy);

@@ -32,6 +32,7 @@ public class Enemy : MonoBehaviour
     private EnemyRangedAttack m_enemyRangedAttack;
 
     private bool m_afterStart = false;
+    //private bool m_waitingBeforeDestroy = false;
 
     public Action onEnemyDestroyed;
 
@@ -53,7 +54,7 @@ public class Enemy : MonoBehaviour
         GetComponent<Health>().OnDeath += OnEnemyDestroyed;
         GetComponent<Health>().OnHealthDecreased += OnHealthDeacreased;
     }
-
+    
     void Update() {
         if (!m_afterStart)
         {
@@ -69,7 +70,9 @@ public class Enemy : MonoBehaviour
 
     public void OnEnemyDestroyed(Health health)
     {
-        m_animator.SetTrigger("death");
+        //if (m_waitingBeforeDestroy) return;
+//m_waitingBeforeDestroy = true;
+        m_animator.SetBool("death", true);
         GetComponent<EnemyFSM>().fsm.ChangeState<EnemyDisabledState>();
         StartCoroutine(WaitBeforeDestroy(m_timeBeforeDestroy));
             
@@ -94,9 +97,12 @@ public class Enemy : MonoBehaviour
                 tag = "Turret";
                 break;
         }
-
+        GetComponent<EnemyFSM>().ChangeToInitialState();
         GetComponent<EnemyLoot>().DropItem(m_percantageOfDropingLoot);
+        GetComponent<Health>().CanTakeDamage = true;
         ObjectPooler.instance.DestroyFromPool(tag, gameObject);
+
+
     }
 
     public Animator animator { get { return m_animator; } }

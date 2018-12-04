@@ -23,9 +23,9 @@ public class EnemyZone : MonoBehaviour {
 	void Update () {
         if (isZoneCleared) return;
 
-        if (m_numberOfActiveEnemies <= 0&&isPlayerInsideZone&& m_showPopUps)
+        if (m_numberOfActiveEnemies <= 0&&isPlayerInsideZone)
         {
-            if (currentWaveIndex != -1)
+            if (currentWaveIndex != -1 && m_showPopUps)
             {
                 AchievementPopUp.QueueAchievement("Wave" + (currentWaveIndex + 1));
             }
