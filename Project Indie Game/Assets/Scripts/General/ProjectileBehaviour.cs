@@ -32,7 +32,7 @@ public class ProjectileBehaviour : MonoBehaviour {
             collider.GetComponent<Health>().InflictDamage(m_damage);
             ObjectPooler.instance.DestroyFromPool(tag, gameObject);
         }
-        if (!collider.CompareTag("Obstacle") ) return;
+        if (!collider.CompareTag("projectileObstacle") ) return;
         ObjectPooler.instance.DestroyFromPool(tag, gameObject);
     }
 }

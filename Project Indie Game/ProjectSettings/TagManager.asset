@@ -9,6 +9,7 @@ TagManager:
   - IgnoreCollision
   - Obstacle
   - PickupSphere
+  - projectileObstacle
   layers:
   - Default
   - TransparentFX

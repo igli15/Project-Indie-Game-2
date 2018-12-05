@@ -67,6 +67,7 @@ public class TurretShootState : AbstractState<EnemyFSM> {
 
     IEnumerator Shoot()
     {
+        Debug.Log("RELOAD TIME: " + m_reloadTime);
         while (m_attackIsAllowed)
         {
             yield return new WaitForSeconds(m_reloadTime);
