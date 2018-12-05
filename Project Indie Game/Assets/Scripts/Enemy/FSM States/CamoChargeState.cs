@@ -45,8 +45,7 @@ public class CamoChargeState : AbstractState<EnemyFSM>
         }
         else
         {
-            Quaternion toRotation = Quaternion.FromToRotation(transform.forward, m_direction);
-            transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, Time.time);
+           
             m_rigidbody.velocity = m_direction * m_speed;
         }
     }

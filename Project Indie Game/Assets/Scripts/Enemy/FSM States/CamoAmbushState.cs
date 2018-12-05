@@ -9,6 +9,8 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
     private EnemyFSM m_enemyFSM;
     private Rigidbody m_rigidbody;
 
+    
+
     [SerializeField]
     private float m_timeTransformToAmbsuh = 1;
     [SerializeField]
@@ -35,7 +37,11 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
     {
         if (m_isUnderGround)
         {
-            //Debug.Log("TIME " + Time.time+" / "+(m_startTimeOfAmbush + m_minTimeOfAmbush) );
+
+        }
+        else
+        {
+            //transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, Time.time);
         }
     }
 
@@ -83,7 +89,7 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
         m_isUnderGround = false;
         HideFromCompanions(true);
         m_enemy.animator.SetBool("attack", true);
-        //m_rigidbody.rotation = Quaternion.LookRotation(targetTransform.position - transform.position,transform.up );
+        transform.LookAt(targetTransform);
         yield return new WaitForSeconds(m_timeTransformOutOfAmbush);
 
         Vector3 dir = targetTransform.position - transform.position;
