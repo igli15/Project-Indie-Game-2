@@ -263,6 +263,12 @@ Prefab:
       propertyPath: m_manager
       value: 
       objectReference: {fileID: 1720710034}
+    - target: {fileID: 114172031740315450, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_iconSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 328d12356677944b6bfaf62adf79c4de,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
   m_IsPrefabParent: 0
@@ -603,6 +609,12 @@ Prefab:
       propertyPath: m_manager
       value: 
       objectReference: {fileID: 1720710034}
+    - target: {fileID: 114707611194197698, guid: 0be4167259c714e9da2907143203e5d3,
+        type: 2}
+      propertyPath: m_iconSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 18f4576ca7aca40d9b764898fcef55a8,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0be4167259c714e9da2907143203e5d3, type: 2}
   m_IsPrefabParent: 0
@@ -7767,6 +7779,12 @@ Prefab:
       propertyPath: m_Name
       value: BlackHole
       objectReference: {fileID: 0}
+    - target: {fileID: 114517391480942842, guid: 3c6f5835efd2d4545a820ae73ecc9768,
+        type: 2}
+      propertyPath: m_iconSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: de0cdad40de4e488a8409c4dbcf4b81e,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
   m_IsPrefabParent: 0
@@ -8407,7 +8425,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e25ad9c9e86154e67803eec2fb3a5733, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 328d12356677944b6bfaf62adf79c4de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9406,7 +9424,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: dbad9834374ae4147b8c9a1a92713eb2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 18f4576ca7aca40d9b764898fcef55a8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10252,7 +10270,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 876f62bf011b849468a83def6ac29588, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a728a746519674b73bfa35eddc6c22d8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10370,6 +10388,17 @@ Prefab:
       propertyPath: m_manager
       value: 
       objectReference: {fileID: 1720710034}
+    - target: {fileID: 114055225296246536, guid: e52b2399126ab497da9d75ba544046dd,
+        type: 2}
+      propertyPath: m_iconSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a728a746519674b73bfa35eddc6c22d8,
+        type: 3}
+    - target: {fileID: 114055225296246536, guid: e52b2399126ab497da9d75ba544046dd,
+        type: 2}
+      propertyPath: m_respawnTime
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e52b2399126ab497da9d75ba544046dd, type: 2}
   m_IsPrefabParent: 0
