@@ -288,8 +288,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 4919895}
   m_waves:
   - numberOfGoombas: 0
@@ -537,8 +538,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1646079716}
   m_waves:
   - numberOfGoombas: 0
@@ -697,8 +699,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 551233307}
   m_waves:
   - numberOfGoombas: 0
@@ -970,7 +973,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 113073370}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.665, y: 0.009999994, z: 0.708}
+  m_LocalPosition: {x: 0.665, y: 0.031, z: 0.708}
   m_LocalScale: {x: 0.025, y: 0.2, z: 0.04}
   m_Children: []
   m_Father: {fileID: 1937393837}
@@ -987,8 +990,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 4
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1937393835}
   m_waves:
   - numberOfGoombas: 1
@@ -1077,8 +1081,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1596212213}
   m_waves:
   - numberOfGoombas: 1
@@ -1137,7 +1142,7 @@ GameObject:
   - component: {fileID: 120034765}
   m_Layer: 10
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: projectileObstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -1666,8 +1671,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1428123883}
   m_waves:
   - numberOfGoombas: 0
@@ -1826,8 +1832,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1646079716}
   m_waves:
   - numberOfGoombas: 0
@@ -2117,8 +2124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1430864723}
   m_waves:
   - numberOfGoombas: 0
@@ -2405,7 +2413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
-  m_showPopUps: 1
+  m_showPopUps: 0
   isZoneCleared: 0
   isPlayerInsideZone: 0
 --- !u!65 &363141694
@@ -2462,8 +2470,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1646079716}
   m_waves:
   - numberOfGoombas: 1
@@ -2556,8 +2565,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 594376577}
   m_waves:
   - numberOfGoombas: 0
@@ -2873,8 +2883,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1430864723}
   m_waves:
   - numberOfGoombas: 0
@@ -2963,8 +2974,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 363141693}
   m_waves:
   - numberOfGoombas: 0
@@ -3197,8 +3209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 999320511}
   m_waves:
   - numberOfGoombas: 0
@@ -3353,8 +3366,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 594376577}
   m_waves:
   - numberOfGoombas: 1
@@ -3638,7 +3652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
-  m_showPopUps: 1
+  m_showPopUps: 0
   isZoneCleared: 0
   isPlayerInsideZone: 0
 --- !u!65 &551233308
@@ -3773,7 +3787,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 575947476}
   m_LocalRotation: {x: -0, y: 0.47267354, z: -0, w: 0.8812376}
-  m_LocalPosition: {x: 0.957, y: 0.009999993, z: 0.472}
+  m_LocalPosition: {x: 1.1110001, y: 0.009999993, z: 0.48299998}
   m_LocalScale: {x: 0.025145402, y: 0.19999981, z: 0.040232718}
   m_Children: []
   m_Father: {fileID: 4919894}
@@ -3790,8 +3804,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 4919895}
   m_waves:
   - numberOfGoombas: 0
@@ -3806,7 +3821,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 575947476}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -3886,7 +3901,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
-  m_showPopUps: 1
+  m_showPopUps: 0
   isZoneCleared: 0
   isPlayerInsideZone: 0
 --- !u!65 &582438319
@@ -4091,8 +4106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1646079716}
   m_waves:
   - numberOfGoombas: 0
@@ -4475,86 +4491,46 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 199216209761027186, guid: eb045ce77e34cfe4b9905793905e48df,
+    - target: {fileID: 198578454575188792, guid: eb045ce77e34cfe4b9905793905e48df,
         type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 88ef923b056f7a5498f1c0dd221a1c56, type: 2}
-    - target: {fileID: 199216209761027186, guid: eb045ce77e34cfe4b9905793905e48df,
+      propertyPath: InitialModule.startSize.scalar
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198086548539076616, guid: eb045ce77e34cfe4b9905793905e48df,
         type: 2}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 88ef923b056f7a5498f1c0dd221a1c56, type: 2}
-    - target: {fileID: 199009538281109446, guid: eb045ce77e34cfe4b9905793905e48df,
+      propertyPath: InitialModule.startSize.scalar
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198631370567840800, guid: eb045ce77e34cfe4b9905793905e48df,
         type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 65d4485899893e540bcb2fc511ce9dc4, type: 2}
-    - target: {fileID: 199009538281109446, guid: eb045ce77e34cfe4b9905793905e48df,
+      propertyPath: InitialModule.startSize.scalar
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198568062768290298, guid: eb045ce77e34cfe4b9905793905e48df,
         type: 2}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 65d4485899893e540bcb2fc511ce9dc4, type: 2}
-    - target: {fileID: 199087605243788148, guid: eb045ce77e34cfe4b9905793905e48df,
+      propertyPath: InitialModule.startSize.scalar
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198578454575188792, guid: eb045ce77e34cfe4b9905793905e48df,
         type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a6b1872078910ea46bc4f5d00dcbecb7, type: 2}
-    - target: {fileID: 199087605243788148, guid: eb045ce77e34cfe4b9905793905e48df,
+      propertyPath: lengthInSec
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 198086548539076616, guid: eb045ce77e34cfe4b9905793905e48df,
         type: 2}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: a6b1872078910ea46bc4f5d00dcbecb7, type: 2}
-    - target: {fileID: 199595193142535090, guid: eb045ce77e34cfe4b9905793905e48df,
+      propertyPath: lengthInSec
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 198631370567840800, guid: eb045ce77e34cfe4b9905793905e48df,
         type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: dfa5ea941b257194bb606d7aec448fe7, type: 2}
-    - target: {fileID: 199595193142535090, guid: eb045ce77e34cfe4b9905793905e48df,
+      propertyPath: lengthInSec
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 198568062768290298, guid: eb045ce77e34cfe4b9905793905e48df,
         type: 2}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: dfa5ea941b257194bb606d7aec448fe7, type: 2}
-    - target: {fileID: 199910995387771988, guid: eb045ce77e34cfe4b9905793905e48df,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 297eae3d6f480df4daaec2bdbbdcd284, type: 2}
-    - target: {fileID: 199910995387771988, guid: eb045ce77e34cfe4b9905793905e48df,
-        type: 2}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 297eae3d6f480df4daaec2bdbbdcd284, type: 2}
-    - target: {fileID: 199422059373929522, guid: eb045ce77e34cfe4b9905793905e48df,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2af7bb9c1a8b8394c8c168edc16e9a3e, type: 2}
-    - target: {fileID: 199422059373929522, guid: eb045ce77e34cfe4b9905793905e48df,
-        type: 2}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2af7bb9c1a8b8394c8c168edc16e9a3e, type: 2}
-    - target: {fileID: 199808358221326484, guid: eb045ce77e34cfe4b9905793905e48df,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d4bda96212190c64e852cc8945172e60, type: 2}
-    - target: {fileID: 199808358221326484, guid: eb045ce77e34cfe4b9905793905e48df,
-        type: 2}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: d4bda96212190c64e852cc8945172e60, type: 2}
-    - target: {fileID: 199407714718412274, guid: eb045ce77e34cfe4b9905793905e48df,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: c1e71b04055736d4684682441c86dc08, type: 2}
-    - target: {fileID: 199407714718412274, guid: eb045ce77e34cfe4b9905793905e48df,
-        type: 2}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: c1e71b04055736d4684682441c86dc08, type: 2}
+      propertyPath: lengthInSec
+      value: 1.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb045ce77e34cfe4b9905793905e48df, type: 2}
   m_IsPrefabParent: 0
@@ -4720,8 +4696,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1153291744}
   m_waves:
   - numberOfGoombas: 0
@@ -5185,8 +5162,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 920180150}
   m_waves:
   - numberOfGoombas: 0
@@ -5725,7 +5703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
-  m_showPopUps: 1
+  m_showPopUps: 0
   isZoneCleared: 0
   isPlayerInsideZone: 0
 --- !u!65 &920180151
@@ -5821,7 +5799,7 @@ GameObject:
   - component: {fileID: 999320512}
   - component: {fileID: 999320511}
   m_Layer: 0
-  m_Name: Opt9(ScneryView) (1)
+  m_Name: Opt10(ScneryView) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5855,7 +5833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
-  m_showPopUps: 1
+  m_showPopUps: 0
   isZoneCleared: 0
   isPlayerInsideZone: 0
 --- !u!65 &999320512
@@ -5895,7 +5873,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1017494794}
   m_LocalRotation: {x: -0, y: 0.4726735, z: -0, w: 0.8812376}
-  m_LocalPosition: {x: 0.74, y: 0.009999993, z: 0.696}
+  m_LocalPosition: {x: 0.894, y: 0.009999993, z: 0.707}
   m_LocalScale: {x: 0.024999976, y: 0.19999981, z: 0.04000007}
   m_Children: []
   m_Father: {fileID: 4919894}
@@ -5912,8 +5890,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 4919895}
   m_waves:
   - numberOfGoombas: 1
@@ -5928,7 +5907,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1017494794}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6077,8 +6056,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1153291744}
   m_waves:
   - numberOfGoombas: 0
@@ -6173,7 +6153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
-  m_showPopUps: 1
+  m_showPopUps: 0
   isZoneCleared: 0
   isPlayerInsideZone: 0
 --- !u!65 &1050909907
@@ -6230,8 +6210,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 4919895}
   m_waves:
   - numberOfGoombas: 0
@@ -6246,7 +6227,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1057411283}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6328,8 +6309,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1050909906}
   m_waves:
   - numberOfGoombas: 1
@@ -6340,7 +6322,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1077514328}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6514,8 +6496,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 594376577}
   m_waves:
   - numberOfGoombas: 0
@@ -7011,8 +6994,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1428123883}
   m_waves:
   - numberOfGoombas: 1
@@ -7101,8 +7085,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1646079716}
   m_waves:
   - numberOfGoombas: 1
@@ -7386,8 +7371,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1428123883}
   m_waves:
   - numberOfGoombas: 1
@@ -7660,8 +7646,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 363141693}
   m_waves:
   - numberOfGoombas: 0
@@ -7771,7 +7758,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4800637056530198, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -36.14
+      value: -45.64
       objectReference: {fileID: 0}
     - target: {fileID: 4800637056530198, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
       propertyPath: m_LocalPosition.y
@@ -7779,7 +7766,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4800637056530198, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -71.3
+      value: -71.1
       objectReference: {fileID: 0}
     - target: {fileID: 4800637056530198, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
       propertyPath: m_LocalRotation.x
@@ -7980,7 +7967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
-  m_showPopUps: 1
+  m_showPopUps: 0
   isZoneCleared: 0
   isPlayerInsideZone: 0
 --- !u!65 &1428123884
@@ -8040,7 +8027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
-  m_showPopUps: 1
+  m_showPopUps: 0
   isZoneCleared: 0
   isPlayerInsideZone: 0
 --- !u!65 &1430864724
@@ -8235,8 +8222,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1153291744}
   m_waves:
   - numberOfGoombas: 1
@@ -8329,8 +8317,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1153291744}
   m_waves:
   - numberOfGoombas: 1
@@ -8812,8 +8801,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1153291744}
   m_waves:
   - numberOfGoombas: 0
@@ -9252,7 +9242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
-  m_showPopUps: 1
+  m_showPopUps: 0
   isZoneCleared: 0
   isPlayerInsideZone: 0
 --- !u!65 &1596212214
@@ -9384,10 +9374,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 920180150}
   m_waves:
-  - numberOfGoombas: 1
+  - numberOfGoombas: 2
     numberOfTurrets: 1
 --- !u!23 &1606877024
 MeshRenderer:
@@ -9524,7 +9515,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4052938390976602, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -42
+      value: 114.13
       objectReference: {fileID: 0}
     - target: {fileID: 4052938390976602, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
       propertyPath: m_LocalPosition.y
@@ -9532,7 +9523,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4052938390976602, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -70.184
+      value: 48.31
       objectReference: {fileID: 0}
     - target: {fileID: 4052938390976602, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
       propertyPath: m_LocalRotation.x
@@ -9984,6 +9975,21 @@ Prefab:
       propertyPath: m_companions.Array.data[2]
       value: 
       objectReference: {fileID: 1549111619}
+    - target: {fileID: 114448462069776582, guid: e8eef3dd61ddb4061b5bec29c200f7f0,
+        type: 2}
+      propertyPath: m_moveSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114448462069776582, guid: e8eef3dd61ddb4061b5bec29c200f7f0,
+        type: 2}
+      propertyPath: m_slowedDownMoveSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114414336349688982, guid: e8eef3dd61ddb4061b5bec29c200f7f0,
+        type: 2}
+      propertyPath: m_dashRange
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e8eef3dd61ddb4061b5bec29c200f7f0, type: 2}
   m_IsPrefabParent: 0
@@ -10208,8 +10214,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 594376577}
   m_waves:
   - numberOfGoombas: 1
@@ -10302,8 +10309,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 1596212213}
   m_waves:
   - numberOfGoombas: 0
@@ -10547,8 +10555,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 999320511}
   m_waves:
   - numberOfGoombas: 1
@@ -10800,7 +10809,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_cooldown: 1
   m_destroyEnemiesAfterPlayerLeaves: 0
-  m_showPopUps: 1
+  m_showPopUps: 0
   isZoneCleared: 0
   isPlayerInsideZone: 0
 --- !u!65 &1937393836
@@ -10822,7 +10831,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1937393834}
   m_LocalRotation: {x: -0, y: -0.167944, z: -0, w: 0.9857966}
-  m_LocalPosition: {x: -23.84, y: 0.18, z: -95.15}
+  m_LocalPosition: {x: -23.6, y: 0.18, z: -91.83}
   m_LocalScale: {x: 45.115227, y: 11.278809, z: 38.239925}
   m_Children:
   - {fileID: 113073371}
@@ -10968,8 +10977,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 582438318}
   m_waves:
   - numberOfGoombas: 1
@@ -11058,8 +11068,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 594376577}
   m_waves:
   - numberOfGoombas: 0
@@ -11521,7 +11532,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2081973508}
   m_LocalRotation: {x: -0, y: 0.47267357, z: -0, w: 0.8812376}
-  m_LocalPosition: {x: 1.299, y: 0.009999993, z: 0.643}
+  m_LocalPosition: {x: 1.382, y: 0.009999993, z: 0.721}
   m_LocalScale: {x: 0.025291745, y: 0.19999981, z: 0.0404668}
   m_Children: []
   m_Father: {fileID: 4919894}
@@ -11538,8 +11549,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 4919895}
   m_waves:
   - numberOfGoombas: 1
@@ -11554,7 +11566,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2081973508}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -11636,8 +11648,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
-  m_particleEffect: {fileID: 0}
+  m_spawnRadius: 0
+  m_particleEffect: {fileID: 1251500099130176, guid: eb045ce77e34cfe4b9905793905e48df,
+    type: 2}
   m_enemyZone: {fileID: 551233307}
   m_waves:
   - numberOfGoombas: 0

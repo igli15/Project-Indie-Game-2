@@ -41,6 +41,11 @@ public class EnemyZone : MonoBehaviour {
     IEnumerator SpawnNextWaveIn(float seconds)
     {
         m_isWaitingToSpawn = true;
+        foreach (EnemySpawner spawner in m_spawners)
+        {
+            spawner.SpawnParticleEffect();
+        }
+
         yield return new WaitForSecondsRealtime(seconds);
         CallNextWave();
     }
