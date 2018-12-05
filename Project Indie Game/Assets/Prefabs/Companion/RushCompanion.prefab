@@ -703,6 +703,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1841648393439302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4540729301603982}
+  - component: {fileID: 135529577820880140}
+  m_Layer: 9
+  m_Name: PickupSphere
+  m_TagString: PickupSphere
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1862318649816078
 GameObject:
   m_ObjectHideFlags: 1
@@ -1092,6 +1108,7 @@ Transform:
   - {fileID: 4982435543749560}
   - {fileID: 4262868488104648}
   - {fileID: 4642413880928298}
+  - {fileID: 4540729301603982}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -1233,6 +1250,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4915386245065572}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4540729301603982
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1841648393439302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4347703659394672}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4559069844124388
 Transform:
@@ -1854,6 +1884,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_chargeParticleSystem: {fileID: 198088828907562012}
   m_rushEffects: {fileID: 1262528518241124}
+--- !u!135 &135529577820880140
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1841648393439302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137383733532471988
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

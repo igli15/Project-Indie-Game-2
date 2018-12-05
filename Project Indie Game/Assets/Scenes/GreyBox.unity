@@ -248,11 +248,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114172031740315450, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
-        type: 2}
-      propertyPath: m_manager
-      value: 
-      objectReference: {fileID: 1720710034}
     - target: {fileID: 114190756962812634, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
         type: 2}
       propertyPath: m_parentFeetPos
@@ -263,6 +258,11 @@ Prefab:
       propertyPath: m_playerScript
       value: 
       objectReference: {fileID: 1720710035}
+    - target: {fileID: 114172031740315450, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_manager
+      value: 
+      objectReference: {fileID: 1720710034}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
   m_IsPrefabParent: 0
@@ -420,11 +420,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 114707611194197698, guid: 0be4167259c714e9da2907143203e5d3,
-        type: 2}
-      propertyPath: m_manager
-      value: 
-      objectReference: {fileID: 1720710034}
     - target: {fileID: 114041540191796322, guid: 0be4167259c714e9da2907143203e5d3,
         type: 2}
       propertyPath: m_parentFeetPos
@@ -435,6 +430,11 @@ Prefab:
       propertyPath: m_playerScript
       value: 
       objectReference: {fileID: 1720710035}
+    - target: {fileID: 114707611194197698, guid: 0be4167259c714e9da2907143203e5d3,
+        type: 2}
+      propertyPath: m_manager
+      value: 
+      objectReference: {fileID: 1720710034}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0be4167259c714e9da2907143203e5d3, type: 2}
   m_IsPrefabParent: 0
@@ -6550,10 +6550,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 1800406981951992, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
-      propertyPath: m_Name
-      value: BlackHole
-      objectReference: {fileID: 0}
+    - target: {fileID: 114517391480942842, guid: 3c6f5835efd2d4545a820ae73ecc9768,
+        type: 2}
+      propertyPath: m_manager
+      value: 
+      objectReference: {fileID: 1720710034}
     - target: {fileID: 114981451278150032, guid: 3c6f5835efd2d4545a820ae73ecc9768,
         type: 2}
       propertyPath: m_parentFeetPos
@@ -6564,11 +6565,10 @@ Prefab:
       propertyPath: m_playerScript
       value: 
       objectReference: {fileID: 1720710035}
-    - target: {fileID: 114517391480942842, guid: 3c6f5835efd2d4545a820ae73ecc9768,
-        type: 2}
-      propertyPath: m_manager
-      value: 
-      objectReference: {fileID: 1720710034}
+    - target: {fileID: 1800406981951992, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
+      propertyPath: m_Name
+      value: BlackHole
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
   m_IsPrefabParent: 0
@@ -9155,11 +9155,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 114055225296246536, guid: e52b2399126ab497da9d75ba544046dd,
-        type: 2}
-      propertyPath: m_manager
-      value: 
-      objectReference: {fileID: 1720710034}
     - target: {fileID: 114573765855307462, guid: e52b2399126ab497da9d75ba544046dd,
         type: 2}
       propertyPath: m_parentFeetPos
@@ -9170,6 +9165,11 @@ Prefab:
       propertyPath: m_playerScript
       value: 
       objectReference: {fileID: 1720710035}
+    - target: {fileID: 114055225296246536, guid: e52b2399126ab497da9d75ba544046dd,
+        type: 2}
+      propertyPath: m_manager
+      value: 
+      objectReference: {fileID: 1720710034}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e52b2399126ab497da9d75ba544046dd, type: 2}
   m_IsPrefabParent: 0

@@ -77,7 +77,7 @@ public class SniperCompanion : Companion
 		base.Throw(dir.normalized);
 		RaycastHit[] hits;
 		
-		hits = Physics.RaycastAll(transform.position, dir.normalized,dir.magnitude).OrderBy(d=>d.distance).ToArray();
+		hits = Physics.RaycastAll(transform.position, dir.normalized,m_throwRange).OrderBy(d=>d.distance).ToArray();
 
 		for (int i = 0; i < hits.Length; i++)
 		{	
