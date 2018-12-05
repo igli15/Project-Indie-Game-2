@@ -21,6 +21,8 @@ public class SeekerCompanion : Companion
 	private float m_initbounceAmount = 0;
 
 	private Transform m_targetTransform;
+
+	private bool m_hitFirstEnemy = false;
 	
 	private void Awake()
 	{
@@ -59,6 +61,7 @@ public class SeekerCompanion : Companion
 	public override void Reset()
 	{
 		base.Reset();
+		m_hitFirstEnemy = false;
 		m_collider.enabled = false;
 		m_bounceAmount = m_initbounceAmount;
 		m_targetTransform = null;
@@ -69,11 +72,11 @@ public class SeekerCompanion : Companion
 		base.Activate(other);
 		if (other.CompareTag("Enemy") && IsThrown)
 		{
+			 m_hitFirstEnemy = true;
+
 			List<GameObject> enemiesInRange = GetAllEnemiesInRange(other.transform);  //Fill the list
-			Debug.Log("ENEMIESHIT: " + enemiesInRange.Count);
 			other.GetComponent<Health>().InflictDamage(m_damageDealt);   //Inflict Damage
 			m_bounceAmount -= 1;  							 // it bounced once 
-			Debug.Log("hit enemy");
 			if(enemiesInRange.Count == 0 ) m_bounceAmount = 0;
 			if ( m_bounceAmount <=0)  //Check if there is no enemies or no bounce left
 			{
@@ -95,17 +98,15 @@ public class SeekerCompanion : Companion
 		}
 		else if(other.gameObject.CompareTag("Obstacle")  && IsThrown) //Disable if it hits anything beside the one stated here
 		{
-			Debug.Log("hit obstacle");
 			m_manager.DisableCompanion(this);
 		}
 		else if (IsThrown)
 		{
 			
 			List<GameObject> enemiesInRange = GetAllEnemiesInRange(other.transform);
-			Debug.Log("ENEMIES: " + enemiesInRange.Count);
 			if(enemiesInRange.Count == 0 ) m_bounceAmount = 0;
 
-			if (m_bounceAmount <=0)  //Check if there is no enemies or no bounce left
+			if (m_bounceAmount <=0 && m_hitFirstEnemy)  //Check if there is no enemies or no bounce left
 			{
 				
 				m_manager.DisableCompanion(this);
