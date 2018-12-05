@@ -887,9 +887,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92382bce60381f147902ac118fa2706e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_moveSpeed: 5
+  m_timeBeforeDestroy: 1
+  m_moveSpeed: 2
   m_pushPower: 2
   m_percantageOfDropingLoot: 15
+  m_animator: {fileID: 0}
   m_enemyDamageCollider: {fileID: 114942262956327980}
   m_sphereCollider: {fileID: 114487993383754268}
 --- !u!114 &114362976301065484
@@ -954,8 +956,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a67904b22f5a34a4b9928f08e2758bfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_health: 75
-  m_maxHealth: 75
+  m_health: 50
+  m_maxHealth: 50
   m_shouldBeDestroyed: 0
 --- !u!114 &114942262956327980
 MonoBehaviour:
