@@ -41,8 +41,8 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
         }
         else
         {
-            Quaternion toRotation = Quaternion.LookRotation(transform.forward, );
-            transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, speed * Time.time);
+           // Quaternion toRotation = Quaternion.LookRotation(transform.forward, );
+           // transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, speed * Time.time);
         }
     }
 
