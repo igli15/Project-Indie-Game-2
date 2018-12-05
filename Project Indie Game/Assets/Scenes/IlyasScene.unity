@@ -3442,7 +3442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider: {fileID: 558408252}
-  damage: 0.1
+  damage: 0.001
 --- !u!95 &1991906983 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: 91211a451346f1f439b96af4257f6863,

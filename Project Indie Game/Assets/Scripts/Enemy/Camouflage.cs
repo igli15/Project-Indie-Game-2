@@ -18,7 +18,7 @@ public class Camouflage : Enemy {
         Debug.Log("HELLO");
         GetComponent<EnemyFSM>().fsm.ChangeState<EnemyDisabledState>();
         animator.SetBool("death", true);
-        StartCoroutine(WaitBeforeDestroy(1));
+        StartCoroutine(WaitBeforeDestroy(1.2f));
     }
 
     IEnumerator WaitBeforeDestroy(float time)

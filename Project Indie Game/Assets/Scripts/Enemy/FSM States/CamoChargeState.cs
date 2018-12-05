@@ -53,6 +53,8 @@ public class CamoChargeState : AbstractState<EnemyFSM>
         //Debug.Log("Enemy is null => " + (m_enemy == null));
         //Debug.Log("RigidBody is null => " + (m_rigidbody == null));
         m_direction = m_enemy.direction;
+        
+            //Vector3.Angle(Vector3.zero, m_direction);
         Debug.Log("ENTER CHARGE STATE ||| DIR: " + m_direction);
 
         m_departurePos = transform.position;
