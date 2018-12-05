@@ -23,7 +23,7 @@ public class TurretSeekState : EnemySeekState {
 
     private void OnPlayerStaySpehere(Collider collider)
     {
-        if (collider.CompareTag("Player")) m_enemyFSM.fsm.ChangeState<TurretShootState>();
+        if (collider.CompareTag("Player")&&enabled) m_enemyFSM.fsm.ChangeState<TurretShootState>();
     }
 
     public override void Enter(IAgent pAgent)

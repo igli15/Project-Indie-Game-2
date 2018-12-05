@@ -16,6 +16,8 @@ public class EnemyZone : MonoBehaviour {
     [Header("Dont edit next varaibles")]
     public bool isZoneCleared = false;
     public bool isPlayerInsideZone = false;
+
+    private bool m_isWaitingToSpawn = true;
 	void Awake () {
         m_spawners = new List<EnemySpawner>();
         //CallNextWave();
@@ -25,7 +27,7 @@ public class EnemyZone : MonoBehaviour {
 	void Update () {
         if (isZoneCleared) return;
 
-        if (m_numberOfActiveEnemies <= 0&&isPlayerInsideZone)
+        if (m_numberOfActiveEnemies <= 0&&isPlayerInsideZone&& !m_isWaitingToSpawn)
         {
             if (currentWaveIndex != -1 && m_showPopUps)
             {
@@ -38,6 +40,7 @@ public class EnemyZone : MonoBehaviour {
 
     IEnumerator SpawnNextWaveIn(float seconds)
     {
+        m_isWaitingToSpawn = true;
         yield return new WaitForSecondsRealtime(seconds);
         CallNextWave();
     }
@@ -56,6 +59,7 @@ public class EnemyZone : MonoBehaviour {
             }
             m_numberOfActiveEnemies += temp;
         }
+        m_isWaitingToSpawn = false;
     }
 
     public void AddSpawner(EnemySpawner spawner)

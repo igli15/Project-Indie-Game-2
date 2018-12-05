@@ -635,7 +635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2b88f705ae6b740b5e144d1eea3433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_cooldown: 5
+  m_cooldown: 1
   m_destroyEnemiesAfterPlayerLeaves: 1
   m_showPopUps: 0
   isZoneCleared: 0
@@ -2104,12 +2104,24 @@ MonoBehaviour:
   m_spawnRadius: 1
   m_enemyZone: {fileID: 506153272}
   m_waves:
-  - numberOfGoombas: 5
-    numberOfTurrets: 5
-  - numberOfGoombas: 5
-    numberOfTurrets: 5
-  - numberOfGoombas: 5
-    numberOfTurrets: 5
+  - numberOfGoombas: 10
+    numberOfTurrets: 10
+  - numberOfGoombas: 10
+    numberOfTurrets: 10
+  - numberOfGoombas: 10
+    numberOfTurrets: 10
+  - numberOfGoombas: 10
+    numberOfTurrets: 10
+  - numberOfGoombas: 10
+    numberOfTurrets: 10
+  - numberOfGoombas: 10
+    numberOfTurrets: 10
+  - numberOfGoombas: 10
+    numberOfTurrets: 10
+  - numberOfGoombas: 10
+    numberOfTurrets: 10
+  - numberOfGoombas: 10
+    numberOfTurrets: 10
 --- !u!1 &1378054572
 GameObject:
   m_ObjectHideFlags: 0
@@ -3687,7 +3699,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!65 &2033827854
 BoxCollider:
