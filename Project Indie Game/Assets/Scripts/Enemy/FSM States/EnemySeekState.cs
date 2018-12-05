@@ -11,7 +11,7 @@ public class EnemySeekState : AbstractState<EnemyFSM>
     public IEnumerator FollowTarget(Transform target,EnemyMovement enemyMovement)
     {
         Vector3 previousTargetPosition = new Vector3(float.PositiveInfinity, float.PositiveInfinity);
-
+        enemyMovement.SetDestination(target.position);
         while (true)
         {
             if (Vector3.SqrMagnitude(previousTargetPosition - target.position) > 0.1f)

@@ -97,7 +97,7 @@ public class Enemy : MonoBehaviour
                 tag = "Turret";
                 break;
         }
-        GetComponent<EnemyFSM>().ChangeToInitialState();
+       // GetComponent<EnemyFSM>().ChangeToInitialState();
         GetComponent<EnemyLoot>().DropItem(m_percantageOfDropingLoot);
         GetComponent<Health>().CanTakeDamage = true;
         ObjectPooler.instance.DestroyFromPool(tag, gameObject);
