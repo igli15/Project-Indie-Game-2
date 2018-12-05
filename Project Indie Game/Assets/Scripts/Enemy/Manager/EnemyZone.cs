@@ -9,6 +9,8 @@ public class EnemyZone : MonoBehaviour {
 
     private int m_numberOfActiveEnemies = 0;
     [Header("Safe to edit next varaibles")]
+    [SerializeField]
+    private float m_cooldown = 2;
     public bool m_destroyEnemiesAfterPlayerLeaves = true;
     public bool m_showPopUps = true;
     [Header("Dont edit next varaibles")]
@@ -30,9 +32,15 @@ public class EnemyZone : MonoBehaviour {
                 AchievementPopUp.QueueAchievement("Wave" + (currentWaveIndex + 1));
             }
 
-            CallNextWave();
+            StartCoroutine(SpawnNextWaveIn(m_cooldown));
         }
 	}
+
+    IEnumerator SpawnNextWaveIn(float seconds)
+    {
+        yield return new WaitForSecondsRealtime(seconds);
+        CallNextWave();
+    }
 
     public void CallNextWave()
     {
