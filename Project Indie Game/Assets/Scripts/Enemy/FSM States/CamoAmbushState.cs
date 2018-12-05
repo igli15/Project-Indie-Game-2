@@ -68,10 +68,14 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
     IEnumerator TransformToAmbush()
     {
         Debug.Log("START Transform to ambush");
+        //Debug.Log("ENEMY = null "+ (m_enemy==null));
+        if (m_enemy == null) m_enemy = GetComponent<Camouflage>();
         m_enemy.animator.SetBool("attack", false);
 
         m_isCollidedWithPlayer = true;
+
         yield return new WaitForSeconds(m_timeTransformToAmbsuh);
+
         m_startTimeOfAmbush = Time.time;
         m_isUnderGround = true;
         m_isCollidedWithPlayer = false;
@@ -86,7 +90,7 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
     {
         Debug.Log("START Transform OUT OF ambush: " + Time.time);
 
-
+        m_enemy.SetUnborrowParticlesActive(true);
         m_health.CanTakeDamage = true;
         m_isUnderGround = false;
         HideFromCompanions(true);
@@ -102,7 +106,7 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
         dir.Normalize();
         Debug.Log("END Transform OUT OF ambush");
         m_enemy.direction = dir;
-
+        m_enemy.SetUnborrowParticlesActive(false);
         m_enemyFSM.fsm.ChangeState<CamoChargeState>();
         yield return null;
     }

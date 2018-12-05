@@ -6,7 +6,8 @@ public class EnemySpawner : MonoBehaviour {
 
     [SerializeField]
     private float m_spawnRadius = 1f;
-
+    [SerializeField]
+    private GameObject m_particleEffect;
     [SerializeField]
     private EnemyZone m_enemyZone;
     [SerializeField]
@@ -73,7 +74,10 @@ public class EnemySpawner : MonoBehaviour {
         spawnPosition.y = transform.position.y;
 
         GameObject newEnemy=ObjectPooler.instance.SpawnFromPool(tag, spawnPosition, transform.rotation);
-       
+
+        //TEST TES TEST TES TEST TE TEST
+        //Instantiate(m_particleEffect, spawnPosition, transform.rotation);
+
         newEnemy.GetComponent<Enemy>().onEnemyDestroyed += OnMyEnemyDestroyed;
         m_enemies.Add(newEnemy.GetComponent<Enemy>());
 

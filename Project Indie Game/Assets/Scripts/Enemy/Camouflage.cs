@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Camouflage : Enemy {
     [SerializeField]
-    private GameObject m_particles;
+    private GameObject m_rushParticles;
+    [SerializeField]
+    private GameObject m_unborrowParticles;
+
     public Vector3 direction = Vector3.zero;
     private Health m_health;
 
@@ -28,9 +31,14 @@ public class Camouflage : Enemy {
         Destroy(gameObject);
     }
 
-    public void SetParticlesActive(bool active)
+    public void SetRushParticlesActive(bool active)
     {
-        m_particles.SetActive(active);
+        m_rushParticles.SetActive(active);
+    }
+
+    public void SetUnborrowParticlesActive(bool active)
+    {
+        m_unborrowParticles.SetActive(active);
     }
 
 	void Update () {

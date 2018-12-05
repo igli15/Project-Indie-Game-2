@@ -64,7 +64,7 @@ public class CamoChargeState : AbstractState<EnemyFSM>
 
         m_rigidbody.velocity = m_direction * m_speed;
         m_isCollidedWithplayer = false;
-        m_enemy.SetParticlesActive(true);
+        m_enemy.SetRushParticlesActive(true);
     }
 
 
@@ -73,7 +73,7 @@ public class CamoChargeState : AbstractState<EnemyFSM>
     {
         base.Exit(pAgent);
         Debug.Log("EXIT CHARGE STATE");
-        m_enemy.SetParticlesActive(false);
+        m_enemy.SetRushParticlesActive(false);
     }
 
 
