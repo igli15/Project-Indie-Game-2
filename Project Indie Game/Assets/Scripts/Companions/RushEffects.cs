@@ -13,7 +13,7 @@ public class RushEffects : CompanionEffects
 		base.Start();
 
 		m_companion.OnThrow += companion => m_rushEffects.SetActive(true);
-		//m_companion.OnDisable += companion => m_rushEffects.SetActive(false);
+		m_companion.OnDisable += companion => m_rushEffects.SetActive(false);
 	}
 	
 	// Update is called once per frame
