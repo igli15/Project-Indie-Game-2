@@ -50,4 +50,10 @@ public class Button : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
 	{
 		Application.Quit();
 	}
+
+	private void OnDisable()
+	{
+		m_brushTweener.Kill();
+		m_brushImage.fillAmount = 0;
+	}
 }

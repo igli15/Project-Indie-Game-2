@@ -32,9 +32,7 @@ public class LevelLoader : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		DontDestroyOnLoad(gameObject);
 		Application.backgroundLoadingPriority = ThreadPriority.Low;
-	
 	}
 
 	public void LoadLevel(string levelName)
