@@ -39,10 +39,18 @@ public class EnemySpawner : MonoBehaviour {
         m_waves.Add(newWave);
     }
 
+    public void SpawnParticleEffect()
+    {
+        if (m_currentWaveIndex+1 >= m_waves.Count) return;
+        if(m_waves[m_currentWaveIndex+1].numberOfTurrets+m_waves[m_currentWaveIndex+1].numberOfGoombas<=0) return;
+        Instantiate(m_particleEffect, transform.position, transform.rotation);
+    }
+
     public int SpawnNextWave()
     {
         if (m_currentWaveIndex+1 >= m_waves.Count) return -1;
         m_currentWaveIndex++;
+                //TEST TES TEST TES TEST TE TEST
 
         m_enemies.Clear();
         SpawnGoomba(m_waves[m_currentWaveIndex].numberOfGoombas);
@@ -75,8 +83,7 @@ public class EnemySpawner : MonoBehaviour {
 
         GameObject newEnemy=ObjectPooler.instance.SpawnFromPool(tag, spawnPosition, transform.rotation);
 
-        //TEST TES TEST TES TEST TE TEST
-        Instantiate(m_particleEffect, spawnPosition, transform.rotation);
+
 
         newEnemy.GetComponent<Enemy>().onEnemyDestroyed += OnMyEnemyDestroyed;
         m_enemies.Add(newEnemy.GetComponent<Enemy>());
