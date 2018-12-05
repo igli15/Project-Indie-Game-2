@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a49c528-e2bc-4868-93d9-6fc86404f55c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Effects/CompanionEffects/Textures/bhole1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effects/CompanionEffects/Textures/bhole1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Effects/CompanionEffects/Textures/bhole2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effects/CompanionEffects/Textures/bhole2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Effects/CompanionEffects/Textures/bhole3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effects/CompanionEffects/Textures/bhole3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Effects/CompanionEffects/Textures/bhole4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effects/CompanionEffects/Textures/bhole4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Effects/CompanionEffects/Textures/bhole5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effects/CompanionEffects/Textures/bhole5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GreyBox.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GreyBox.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Companions/RushEffects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Companions/RushEffects.cs" afterDir="false" />
-    </list>
+    <list default="true" id="0a49c528-e2bc-4868-93d9-6fc86404f55c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -485,12 +477,12 @@
       <workItem from="1543325701657" duration="2394000" />
       <workItem from="1543943114769" duration="32000" />
       <workItem from="1543943198369" duration="7310000" />
-      <workItem from="1543955258043" duration="1817000" />
+      <workItem from="1543955258043" duration="1934000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187270000" />
+    <option name="totallyTimeSpent" value="187387000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
