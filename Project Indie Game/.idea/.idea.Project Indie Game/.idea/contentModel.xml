@@ -405,6 +405,7 @@
           <e p="LevelLoader.cs" t="Include" />
           <e p="MainMenu" t="Include">
             <e p="Button.cs" t="Include" />
+            <e p="CollectableText.cs" t="Include" />
             <e p="ShakePanel.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
