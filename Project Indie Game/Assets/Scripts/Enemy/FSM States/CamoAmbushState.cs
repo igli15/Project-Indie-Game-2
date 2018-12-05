@@ -39,12 +39,12 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
 
     void HideUnderground()
     {
-        transform.position += transform.up * 0.6f;
+        //transform.position += transform.up * 0.6f;
     }
 
     void LeaveUnderground()
     {
-        transform.position += -transform.up * 0.6f;
+        //transform.position += -transform.up * 0.6f;
     }
 
     public override void Enter(IAgent pAgent)
@@ -52,12 +52,14 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
         base.Enter(pAgent);
         StopAllCoroutines();
         Debug.Log("ENTER AMBUSH STATE");
+
         StartCoroutine(TransformToAmbush());
     }
 
     IEnumerator TransformToAmbush()
     {
         Debug.Log("START Transform to ambush");
+        m_enemy.animator.SetBool("attack", false);
         m_isCollidedWithPlayer = true;
         yield return new WaitForSeconds(m_timeTransformToAmbsuh);
         m_startTimeOfAmbush = Time.time;
@@ -78,6 +80,7 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
         m_health.CanTakeDamage = true;
         m_isUnderGround = false;
         HideFromCompanions(true);
+        m_enemy.animator.SetBool("attack", true);
 
         yield return new WaitForSeconds(m_timeTransformOutOfAmbush);
 

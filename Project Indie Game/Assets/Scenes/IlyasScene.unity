@@ -714,6 +714,10 @@ Prefab:
       propertyPath: m_Name
       value: Avatar
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 91211a451346f1f439b96af4257f6863, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3e1bc79b86d34d84bb9f08e153ee6968, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91211a451346f1f439b96af4257f6863, type: 3}
   m_IsPrefabParent: 0
@@ -3338,9 +3342,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.682662
-  m_Height: 2
+  m_Height: 3.7020931
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.85104656, z: 0}
 --- !u!23 &1911351401
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3390,7 +3394,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1911351399}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.9, y: 11.84, z: 52.21}
+  m_LocalPosition: {x: 40.27, y: 11.84, z: 52.21}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 558408253}
@@ -3404,7 +3408,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1911351399}
   serializedVersion: 2
-  m_Mass: 10
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -3432,13 +3436,18 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1911351399}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d195bed48bf0bb64f91ef2609b884ae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   collider: {fileID: 558408252}
   damage: 10
+--- !u!95 &1991906983 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: 91211a451346f1f439b96af4257f6863,
+    type: 3}
+  m_PrefabInternal: {fileID: 538940820}
 --- !u!1 &2024482580
 GameObject:
   m_ObjectHideFlags: 0
@@ -3615,7 +3624,7 @@ MonoBehaviour:
   m_moveSpeed: 5
   m_pushPower: 5
   m_percantageOfDropingLoot: 50
-  m_animator: {fileID: 0}
+  m_animator: {fileID: 1991906983}
   m_enemyDamageCollider: {fileID: 0}
   m_sphereCollider: {fileID: 1528926152}
   direction: {x: 0, y: 0, z: 0}
@@ -3699,7 +3708,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2033827846}
   m_LocalRotation: {x: -0, y: 0.6880239, z: -0, w: 0.72568804}
-  m_LocalPosition: {x: 31.443277, y: 11.122, z: 64.3}
+  m_LocalPosition: {x: 31.443277, y: 11.122, z: 53.53}
   m_LocalScale: {x: 0.5000001, y: 0.5, z: 0.5000001}
   m_Children:
   - {fileID: 617926074}
