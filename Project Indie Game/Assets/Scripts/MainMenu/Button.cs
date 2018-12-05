@@ -45,4 +45,9 @@ public class Button : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
 	{
 		DisableBrush();
 	}
+
+	public void QuitGame()
+	{
+		Application.Quit();
+	}
 }
