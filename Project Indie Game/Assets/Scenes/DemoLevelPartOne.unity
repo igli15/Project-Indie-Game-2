@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.009297898, g: 0.007858778, b: 0.00885789, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -229,6 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2b88f705ae6b740b5e144d1eea3433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
   m_showPopUps: 1
   isZoneCleared: 0
@@ -288,6 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 4919895}
   m_waves:
   - numberOfGoombas: 0
@@ -536,6 +538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1646079716}
   m_waves:
   - numberOfGoombas: 0
@@ -695,6 +698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 551233307}
   m_waves:
   - numberOfGoombas: 0
@@ -966,7 +970,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 113073370}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.695, y: 0.009999994, z: 0.716}
+  m_LocalPosition: {x: 0.665, y: 0.009999994, z: 0.708}
   m_LocalScale: {x: 0.025, y: 0.2, z: 0.04}
   m_Children: []
   m_Father: {fileID: 1937393837}
@@ -983,10 +987,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 1
+  m_spawnRadius: 4
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1937393835}
   m_waves:
-  - numberOfGoombas: 4
+  - numberOfGoombas: 1
     numberOfTurrets: 0
 --- !u!23 &113073373
 MeshRenderer:
@@ -1073,6 +1078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1596212213}
   m_waves:
   - numberOfGoombas: 1
@@ -1188,7 +1194,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &133036791
 Prefab:
@@ -1341,7 +1347,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.50000024, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &155185497
 MonoBehaviour:
@@ -1661,6 +1667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1428123883}
   m_waves:
   - numberOfGoombas: 0
@@ -1820,6 +1827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1646079716}
   m_waves:
   - numberOfGoombas: 0
@@ -2011,7 +2019,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &275326001
 Light:
   m_ObjectHideFlags: 0
@@ -2059,7 +2067,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &281114850 stripped
 MonoBehaviour:
@@ -2110,6 +2118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1430864723}
   m_waves:
   - numberOfGoombas: 0
@@ -2279,7 +2288,7 @@ Transform:
   - {fileID: 1394088877}
   - {fileID: 1699189696}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &352178742 stripped
 Transform:
@@ -2394,6 +2403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2b88f705ae6b740b5e144d1eea3433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
   m_showPopUps: 1
   isZoneCleared: 0
@@ -2453,6 +2463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1646079716}
   m_waves:
   - numberOfGoombas: 1
@@ -2546,6 +2557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 594376577}
   m_waves:
   - numberOfGoombas: 0
@@ -2751,7 +2763,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &402310024
 Prefab:
@@ -2862,6 +2874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1430864723}
   m_waves:
   - numberOfGoombas: 0
@@ -2951,6 +2964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 363141693}
   m_waves:
   - numberOfGoombas: 0
@@ -3184,6 +3198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 999320511}
   m_waves:
   - numberOfGoombas: 0
@@ -3339,6 +3354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 594376577}
   m_waves:
   - numberOfGoombas: 1
@@ -3620,6 +3636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2b88f705ae6b740b5e144d1eea3433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
   m_showPopUps: 1
   isZoneCleared: 0
@@ -3774,6 +3791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 4919895}
   m_waves:
   - numberOfGoombas: 0
@@ -3866,6 +3884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2b88f705ae6b740b5e144d1eea3433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
   m_showPopUps: 1
   isZoneCleared: 0
@@ -3965,7 +3984,7 @@ Transform:
   m_LocalScale: {x: 0.6858578, y: 0.6858579, z: 0.6858578}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &594376575
 GameObject:
@@ -4013,6 +4032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2b88f705ae6b740b5e144d1eea3433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 1
   m_showPopUps: 1
   isZoneCleared: 0
@@ -4072,6 +4092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1646079716}
   m_waves:
   - numberOfGoombas: 0
@@ -4415,6 +4436,128 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 651765310}
+--- !u!1001 &654360975
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4127935737078080, guid: eb045ce77e34cfe4b9905793905e48df, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 28.374847
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127935737078080, guid: eb045ce77e34cfe4b9905793905e48df, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000009536743
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127935737078080, guid: eb045ce77e34cfe4b9905793905e48df, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -47.635513
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127935737078080, guid: eb045ce77e34cfe4b9905793905e48df, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127935737078080, guid: eb045ce77e34cfe4b9905793905e48df, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127935737078080, guid: eb045ce77e34cfe4b9905793905e48df, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127935737078080, guid: eb045ce77e34cfe4b9905793905e48df, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127935737078080, guid: eb045ce77e34cfe4b9905793905e48df, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199216209761027186, guid: eb045ce77e34cfe4b9905793905e48df,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 88ef923b056f7a5498f1c0dd221a1c56, type: 2}
+    - target: {fileID: 199216209761027186, guid: eb045ce77e34cfe4b9905793905e48df,
+        type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 88ef923b056f7a5498f1c0dd221a1c56, type: 2}
+    - target: {fileID: 199009538281109446, guid: eb045ce77e34cfe4b9905793905e48df,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65d4485899893e540bcb2fc511ce9dc4, type: 2}
+    - target: {fileID: 199009538281109446, guid: eb045ce77e34cfe4b9905793905e48df,
+        type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65d4485899893e540bcb2fc511ce9dc4, type: 2}
+    - target: {fileID: 199087605243788148, guid: eb045ce77e34cfe4b9905793905e48df,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6b1872078910ea46bc4f5d00dcbecb7, type: 2}
+    - target: {fileID: 199087605243788148, guid: eb045ce77e34cfe4b9905793905e48df,
+        type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6b1872078910ea46bc4f5d00dcbecb7, type: 2}
+    - target: {fileID: 199595193142535090, guid: eb045ce77e34cfe4b9905793905e48df,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dfa5ea941b257194bb606d7aec448fe7, type: 2}
+    - target: {fileID: 199595193142535090, guid: eb045ce77e34cfe4b9905793905e48df,
+        type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: dfa5ea941b257194bb606d7aec448fe7, type: 2}
+    - target: {fileID: 199910995387771988, guid: eb045ce77e34cfe4b9905793905e48df,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 297eae3d6f480df4daaec2bdbbdcd284, type: 2}
+    - target: {fileID: 199910995387771988, guid: eb045ce77e34cfe4b9905793905e48df,
+        type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 297eae3d6f480df4daaec2bdbbdcd284, type: 2}
+    - target: {fileID: 199422059373929522, guid: eb045ce77e34cfe4b9905793905e48df,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2af7bb9c1a8b8394c8c168edc16e9a3e, type: 2}
+    - target: {fileID: 199422059373929522, guid: eb045ce77e34cfe4b9905793905e48df,
+        type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2af7bb9c1a8b8394c8c168edc16e9a3e, type: 2}
+    - target: {fileID: 199808358221326484, guid: eb045ce77e34cfe4b9905793905e48df,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d4bda96212190c64e852cc8945172e60, type: 2}
+    - target: {fileID: 199808358221326484, guid: eb045ce77e34cfe4b9905793905e48df,
+        type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d4bda96212190c64e852cc8945172e60, type: 2}
+    - target: {fileID: 199407714718412274, guid: eb045ce77e34cfe4b9905793905e48df,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c1e71b04055736d4684682441c86dc08, type: 2}
+    - target: {fileID: 199407714718412274, guid: eb045ce77e34cfe4b9905793905e48df,
+        type: 2}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: c1e71b04055736d4684682441c86dc08, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: eb045ce77e34cfe4b9905793905e48df, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &664232292
 Prefab:
   m_ObjectHideFlags: 0
@@ -4578,6 +4721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1153291744}
   m_waves:
   - numberOfGoombas: 0
@@ -4795,6 +4939,74 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f8e442c406d6784da00ec0428b9f738, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &717280081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1194549740889076, guid: 748332cb9e7de6548a4303f78a11e62f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 717280083}
+  - component: {fileID: 717280082}
+  m_Layer: 0
+  m_Name: Directional Light (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &717280082
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 108035565755605764, guid: 748332cb9e7de6548a4303f78a11e62f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717280081}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 0.8018868, g: 0.7905393, b: 0.7905393, a: 1}
+  m_Intensity: 0.75
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 0.595
+    m_Bias: 0.005
+    m_NormalBias: 0.4
+    m_NearPlane: 0.12
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &717280083
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4298553146442246, guid: 748332cb9e7de6548a4303f78a11e62f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717280081}
+  m_LocalRotation: {x: 0.45576048, y: -0.17985247, z: 0.21447675, w: 0.84494686}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 57.923004, y: -11.782001, z: 21.949001}
 --- !u!1001 &729530389
 Prefab:
   m_ObjectHideFlags: 0
@@ -4974,6 +5186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 920180150}
   m_waves:
   - numberOfGoombas: 0
@@ -5153,7 +5366,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &821439707
 MonoBehaviour:
@@ -5510,6 +5723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2b88f705ae6b740b5e144d1eea3433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
   m_showPopUps: 1
   isZoneCleared: 0
@@ -5639,6 +5853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2b88f705ae6b740b5e144d1eea3433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
   m_showPopUps: 1
   isZoneCleared: 0
@@ -5698,6 +5913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 4919895}
   m_waves:
   - numberOfGoombas: 1
@@ -5862,6 +6078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1153291744}
   m_waves:
   - numberOfGoombas: 0
@@ -5954,6 +6171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2b88f705ae6b740b5e144d1eea3433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
   m_showPopUps: 1
   isZoneCleared: 0
@@ -6013,6 +6231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 4919895}
   m_waves:
   - numberOfGoombas: 0
@@ -6092,7 +6311,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1077514328}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.695, y: 0.009999994, z: 0.716}
+  m_LocalPosition: {x: 0.678, y: 0.009999994, z: 0.622}
   m_LocalScale: {x: 0.025, y: 0.2, z: 0.04}
   m_Children: []
   m_Father: {fileID: 1050909905}
@@ -6109,7 +6328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7c5240bc7d0f6458bf74002d79d2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRadius: 0.5
+  m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1050909906}
   m_waves:
   - numberOfGoombas: 1
@@ -6120,7 +6340,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1077514328}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -6250,7 +6470,7 @@ Transform:
   - {fileID: 179653387}
   - {fileID: 1659760367}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1141506494
 GameObject:
@@ -6295,6 +6515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 594376577}
   m_waves:
   - numberOfGoombas: 0
@@ -6391,6 +6612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2b88f705ae6b740b5e144d1eea3433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
   m_showPopUps: 1
   isZoneCleared: 0
@@ -6534,11 +6756,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4368322786750820, guid: e8eef3dd61ddb4061b5bec29c200f7f0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -42.8
+      value: -42.676
       objectReference: {fileID: 0}
     - target: {fileID: 4368322786750820, guid: e8eef3dd61ddb4061b5bec29c200f7f0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.03
+      value: 0.37
       objectReference: {fileID: 0}
     - target: {fileID: 4368322786750820, guid: e8eef3dd61ddb4061b5bec29c200f7f0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6562,7 +6784,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4368322786750820, guid: e8eef3dd61ddb4061b5bec29c200f7f0, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 114348476914321370, guid: e8eef3dd61ddb4061b5bec29c200f7f0,
         type: 2}
@@ -6582,7 +6804,7 @@ Prefab:
     - target: {fileID: 137457724685755420, guid: e8eef3dd61ddb4061b5bec29c200f7f0,
         type: 2}
       propertyPath: m_AABB.m_Center.z
-      value: -0.09368515
+      value: -0.09366226
       objectReference: {fileID: 0}
     - target: {fileID: 137457724685755420, guid: e8eef3dd61ddb4061b5bec29c200f7f0,
         type: 2}
@@ -6592,7 +6814,34 @@ Prefab:
     - target: {fileID: 137457724685755420, guid: e8eef3dd61ddb4061b5bec29c200f7f0,
         type: 2}
       propertyPath: m_AABB.m_Center.y
-      value: 3.3884583
+      value: 3.3884735
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368322786750820, guid: e8eef3dd61ddb4061b5bec29c200f7f0, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.71192515
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368322786750820, guid: e8eef3dd61ddb4061b5bec29c200f7f0, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7119246
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368322786750820, guid: e8eef3dd61ddb4061b5bec29c200f7f0, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.7119246
+      objectReference: {fileID: 0}
+    - target: {fileID: 137457724685755420, guid: e8eef3dd61ddb4061b5bec29c200f7f0,
+        type: 2}
+      propertyPath: m_AABB.m_Extent.x
+      value: 13.0107
+      objectReference: {fileID: 0}
+    - target: {fileID: 137457724685755420, guid: e8eef3dd61ddb4061b5bec29c200f7f0,
+        type: 2}
+      propertyPath: m_AABB.m_Extent.y
+      value: 14.186527
+      objectReference: {fileID: 0}
+    - target: {fileID: 137457724685755420, guid: e8eef3dd61ddb4061b5bec29c200f7f0,
+        type: 2}
+      propertyPath: m_AABB.m_Extent.z
+      value: 11.471879
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e8eef3dd61ddb4061b5bec29c200f7f0, type: 2}
@@ -6867,6 +7116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1428123883}
   m_waves:
   - numberOfGoombas: 1
@@ -6956,6 +7206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1646079716}
   m_waves:
   - numberOfGoombas: 1
@@ -7190,7 +7441,7 @@ RectTransform:
   - {fileID: 105449317}
   - {fileID: 1715408540}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7240,6 +7491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1428123883}
   m_waves:
   - numberOfGoombas: 1
@@ -7513,6 +7765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 363141693}
   m_waves:
   - numberOfGoombas: 0
@@ -7622,15 +7875,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4800637056530198, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -39.96
+      value: -36.14
       objectReference: {fileID: 0}
     - target: {fileID: 4800637056530198, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.56556
+      value: 0.85083
       objectReference: {fileID: 0}
     - target: {fileID: 4800637056530198, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -74.1
+      value: -71.3
       objectReference: {fileID: 0}
     - target: {fileID: 4800637056530198, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
       propertyPath: m_LocalRotation.x
@@ -7650,7 +7903,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4800637056530198, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 114190756962812634, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
         type: 2}
@@ -7670,7 +7923,7 @@ Prefab:
     - target: {fileID: 114172031740315450, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
         type: 2}
       propertyPath: m_seekRange
-      value: 6
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 114172031740315450, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
         type: 2}
@@ -7680,7 +7933,103 @@ Prefab:
     - target: {fileID: 114172031740315450, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
         type: 2}
       propertyPath: m_throwSpeed
-      value: 15
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800637056530198, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.3076065
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800637056530198, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.3076065
+      objectReference: {fileID: 0}
+    - target: {fileID: 4800637056530198, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.3076065
+      objectReference: {fileID: 0}
+    - target: {fileID: 195144222929685860, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_Speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746033732837972, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96923976126430190, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96923976126430190, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
+      value: 0.6603775
+      objectReference: {fileID: 0}
+    - target: {fileID: 96923976126430190, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].time
+      value: 0.73555756
+      objectReference: {fileID: 0}
+    - target: {fileID: 96923976126430190, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96923976126430190, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 96923976126430190, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 0.9880785
+      objectReference: {fileID: 0}
+    - target: {fileID: 96923976126430190, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96923976126430190, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.key0.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96923976126430190, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.key2.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 96923976126430190, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.atime1
+      value: 2621
+      objectReference: {fileID: 0}
+    - target: {fileID: 96923976126430190, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.atime2
+      value: 60292
+      objectReference: {fileID: 0}
+    - target: {fileID: 96923976126430190, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.atime3
+      value: 60909
+      objectReference: {fileID: 0}
+    - target: {fileID: 96923976126430190, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.m_NumAlphaKeys
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 96923976126430190, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.key3.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96923976126430190, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
+        type: 2}
+      propertyPath: m_Time
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
@@ -7733,6 +8082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2b88f705ae6b740b5e144d1eea3433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
   m_showPopUps: 1
   isZoneCleared: 0
@@ -7792,6 +8142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2b88f705ae6b740b5e144d1eea3433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
   m_showPopUps: 1
   isZoneCleared: 0
@@ -7989,6 +8340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1153291744}
   m_waves:
   - numberOfGoombas: 1
@@ -8082,6 +8434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1153291744}
   m_waves:
   - numberOfGoombas: 1
@@ -8249,15 +8602,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4347703659394672, guid: e52b2399126ab497da9d75ba544046dd, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -41.494
+      value: -40.94
       objectReference: {fileID: 0}
     - target: {fileID: 4347703659394672, guid: e52b2399126ab497da9d75ba544046dd, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.34024
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4347703659394672, guid: e52b2399126ab497da9d75ba544046dd, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -76.1
+      value: -76.85
       objectReference: {fileID: 0}
     - target: {fileID: 4347703659394672, guid: e52b2399126ab497da9d75ba544046dd, type: 2}
       propertyPath: m_LocalRotation.x
@@ -8277,7 +8630,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4347703659394672, guid: e52b2399126ab497da9d75ba544046dd, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 114573765855307462, guid: e52b2399126ab497da9d75ba544046dd,
         type: 2}
@@ -8432,6 +8785,27 @@ Prefab:
       propertyPath: m_damageAmount
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 4347703659394672, guid: e52b2399126ab497da9d75ba544046dd, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.6162649
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347703659394672, guid: e52b2399126ab497da9d75ba544046dd, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.616265
+      objectReference: {fileID: 0}
+    - target: {fileID: 4347703659394672, guid: e52b2399126ab497da9d75ba544046dd, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.61626524
+      objectReference: {fileID: 0}
+    - target: {fileID: 195262712858803110, guid: e52b2399126ab497da9d75ba544046dd,
+        type: 2}
+      propertyPath: m_Speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4262868488104648, guid: e52b2399126ab497da9d75ba544046dd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.77
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e52b2399126ab497da9d75ba544046dd, type: 2}
   m_IsPrefabParent: 0
@@ -8498,7 +8872,7 @@ Transform:
   - {fileID: 2003742247}
   - {fileID: 553093362}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1543653523
 GameObject:
@@ -8543,6 +8917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1153291744}
   m_waves:
   - numberOfGoombas: 0
@@ -8979,6 +9354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2b88f705ae6b740b5e144d1eea3433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 0
   m_showPopUps: 1
   isZoneCleared: 0
@@ -9112,6 +9488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 920180150}
   m_waves:
   - numberOfGoombas: 1
@@ -9251,15 +9628,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4052938390976602, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 113.2
+      value: -42
       objectReference: {fileID: 0}
     - target: {fileID: 4052938390976602, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: 0.9391
       objectReference: {fileID: 0}
     - target: {fileID: 4052938390976602, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 50.6
+      value: -70.184
       objectReference: {fileID: 0}
     - target: {fileID: 4052938390976602, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
       propertyPath: m_LocalRotation.x
@@ -9279,7 +9656,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4052938390976602, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114517391480942842, guid: 3c6f5835efd2d4545a820ae73ecc9768,
         type: 2}
@@ -9299,6 +9676,47 @@ Prefab:
     - target: {fileID: 1800406981951992, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
       propertyPath: m_Name
       value: BlackHole
+      objectReference: {fileID: 0}
+    - target: {fileID: 195333817862592672, guid: 3c6f5835efd2d4545a820ae73ecc9768,
+        type: 2}
+      propertyPath: m_Speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4870816335096730, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 65433550211733944, guid: 3c6f5835efd2d4545a820ae73ecc9768,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 3.5577083
+      objectReference: {fileID: 0}
+    - target: {fileID: 65433550211733944, guid: 3c6f5835efd2d4545a820ae73ecc9768,
+        type: 2}
+      propertyPath: m_Center.y
+      value: -0.024885893
+      objectReference: {fileID: 0}
+    - target: {fileID: 65433550211733944, guid: 3c6f5835efd2d4545a820ae73ecc9768,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 4.1874185
+      objectReference: {fileID: 0}
+    - target: {fileID: 65433550211733944, guid: 3c6f5835efd2d4545a820ae73ecc9768,
+        type: 2}
+      propertyPath: m_Center.z
+      value: -0.1697743
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052938390976602, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.6220711
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052938390976602, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.622071
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052938390976602, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.622071
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c6f5835efd2d4545a820ae73ecc9768, type: 2}
@@ -9415,6 +9833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2b88f705ae6b740b5e144d1eea3433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_cooldown: 2
   m_destroyEnemiesAfterPlayerLeaves: 1
   m_showPopUps: 1
   isZoneCleared: 0
@@ -9837,6 +10256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 594376577}
   m_waves:
   - numberOfGoombas: 1
@@ -9930,6 +10350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 1596212213}
   m_waves:
   - numberOfGoombas: 0
@@ -10174,6 +10595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 999320511}
   m_waves:
   - numberOfGoombas: 1
@@ -10328,7 +10750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 5e412a7cca8d0414a94888ccd682f87c, type: 2}
+  profile: {fileID: 11400000, guid: d26364b11c91de34cb8738520d5d0d81, type: 2}
 --- !u!1001 &1874743375
 Prefab:
   m_ObjectHideFlags: 0
@@ -10423,6 +10845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2b88f705ae6b740b5e144d1eea3433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_cooldown: 1
   m_destroyEnemiesAfterPlayerLeaves: 0
   m_showPopUps: 1
   isZoneCleared: 0
@@ -10446,7 +10869,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1937393834}
   m_LocalRotation: {x: -0, y: -0.167944, z: -0, w: 0.9857966}
-  m_LocalPosition: {x: -26.7, y: 0.18, z: -89.6}
+  m_LocalPosition: {x: -23.84, y: 0.18, z: -95.15}
   m_LocalScale: {x: 45.115227, y: 11.278809, z: 38.239925}
   m_Children:
   - {fileID: 113073371}
@@ -10593,6 +11016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 582438318}
   m_waves:
   - numberOfGoombas: 1
@@ -10682,6 +11106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 594376577}
   m_waves:
   - numberOfGoombas: 0
@@ -10811,15 +11236,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4491097502784218, guid: 0be4167259c714e9da2907143203e5d3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -45.15
+      value: -45.44
       objectReference: {fileID: 0}
     - target: {fileID: 4491097502784218, guid: 0be4167259c714e9da2907143203e5d3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.38756
+      value: 0.74133
       objectReference: {fileID: 0}
     - target: {fileID: 4491097502784218, guid: 0be4167259c714e9da2907143203e5d3, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -73.5
+      value: -74.42
       objectReference: {fileID: 0}
     - target: {fileID: 4491097502784218, guid: 0be4167259c714e9da2907143203e5d3, type: 2}
       propertyPath: m_LocalRotation.x
@@ -10839,7 +11264,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4491097502784218, guid: 0be4167259c714e9da2907143203e5d3, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 114041540191796322, guid: 0be4167259c714e9da2907143203e5d3,
         type: 2}
@@ -10856,6 +11281,28 @@ Prefab:
       propertyPath: m_manager
       value: 
       objectReference: {fileID: 1961032391}
+    - target: {fileID: 4491097502784218, guid: 0be4167259c714e9da2907143203e5d3, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.3076065
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491097502784218, guid: 0be4167259c714e9da2907143203e5d3, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.3076065
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491097502784218, guid: 0be4167259c714e9da2907143203e5d3, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.3076065
+      objectReference: {fileID: 0}
+    - target: {fileID: 195052527691206504, guid: 0be4167259c714e9da2907143203e5d3,
+        type: 2}
+      propertyPath: m_Speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114707611194197698, guid: 0be4167259c714e9da2907143203e5d3,
+        type: 2}
+      propertyPath: m_throwRange
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0be4167259c714e9da2907143203e5d3, type: 2}
   m_IsPrefabParent: 0
@@ -11022,7 +11469,7 @@ Transform:
   - {fileID: 628545005}
   - {fileID: 324952750}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2054683916
 GameObject:
@@ -11139,6 +11586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 1.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 4919895}
   m_waves:
   - numberOfGoombas: 1
@@ -11236,6 +11684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_spawnRadius: 0.5
+  m_particleEffect: {fileID: 0}
   m_enemyZone: {fileID: 551233307}
   m_waves:
   - numberOfGoombas: 0
