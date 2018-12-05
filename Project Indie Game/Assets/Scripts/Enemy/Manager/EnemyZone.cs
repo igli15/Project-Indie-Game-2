@@ -66,8 +66,8 @@ public class EnemyZone : MonoBehaviour {
     private void OnTriggerEnter(Collider collider)
     {
         if (!collider.CompareTag("Player")) return;
-        
-        if(!isZoneCleared) CallNextWave();
+
+        if (!isZoneCleared) StartCoroutine(SpawnNextWaveIn(m_cooldown));
         isPlayerInsideZone = true;
 
     }
