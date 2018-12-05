@@ -65,7 +65,7 @@ public class CompanionController : MonoBehaviour
 		{
 			m_manager.DropCompanion(m_manager.GetSelectedCompanion());
 		}
-		
+
 	}
 
 	private void HandleScrollWheel()
@@ -180,6 +180,7 @@ public class CompanionController : MonoBehaviour
 			m_aimIndicatorPivot.gameObject.SetActive(false);
 			m_aimIndicatorPivot.localPosition = Vector3.zero;
 			if (OnMouseRelease != null) OnMouseRelease(this, companion);
+			if(companion.OnChargeInterrupted != null) companion.OnChargeInterrupted(companion,m_timeCharging);
 			m_isCharging = false;
 			m_timeCharging = 0;
 			if (companion.IsCharged)
