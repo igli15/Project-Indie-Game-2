@@ -14,7 +14,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mushroom_3_mat
-    second: {fileID: 2100000, guid: ca4e3ec20cb8226448e8fb64be14e2aa, type: 2}
+    second: {fileID: 2100000, guid: 1e8e9bbeee2ee514da4440d98012bc53, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
