@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Camouflage : Enemy {
-    
+    [SerializeField]
+    private GameObject m_particles;
     public Vector3 direction = Vector3.zero;
     private Health m_health;
 
@@ -25,6 +26,11 @@ public class Camouflage : Enemy {
     {
         yield return new WaitForSecondsRealtime(time);
         Destroy(gameObject);
+    }
+
+    public void SetParticlesActive(bool active)
+    {
+        m_particles.SetActive(active);
     }
 
 	void Update () {

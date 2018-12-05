@@ -69,6 +69,7 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
     {
         Debug.Log("START Transform to ambush");
         m_enemy.animator.SetBool("attack", false);
+
         m_isCollidedWithPlayer = true;
         yield return new WaitForSeconds(m_timeTransformToAmbsuh);
         m_startTimeOfAmbush = Time.time;
