@@ -41,7 +41,8 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
         }
         else
         {
-            //transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, Time.time);
+            Quaternion toRotation = Quaternion.LookRotation(transform.forward, );
+            transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, speed * Time.time);
         }
     }
 
@@ -89,9 +90,12 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
         m_isUnderGround = false;
         HideFromCompanions(true);
         m_enemy.animator.SetBool("attack", true);
+
         transform.LookAt(targetTransform);
+
         yield return new WaitForSeconds(m_timeTransformOutOfAmbush);
 
+        transform.LookAt(targetTransform);
         Vector3 dir = targetTransform.position - transform.position;
         dir = new Vector3(dir.x, 0, dir.z);
         dir.Normalize();
