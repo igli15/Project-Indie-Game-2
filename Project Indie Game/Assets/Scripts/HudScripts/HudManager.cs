@@ -39,15 +39,22 @@ public class HudManager : MonoBehaviour
 			ACompanion.AllCompanions[i].OnDeSelected += DeselectIcon;
 			ACompanion.AllCompanions[i].OnPicked += AssignIcon;
 			ACompanion.AllCompanions[i].OnDropped += ResetIcon;
+			ACompanion.AllCompanions[i].OnThrow += FillImage;
+			ACompanion.AllCompanions[i].OnDisable += ResetImageFill;
 		}
 	}
 	
 	// Update is called once per frame
-	void Update () 
+	void FillImage(ACompanion companion)
 	{
-		
+		m_iconGameObjects[companion.Index - 1].GetComponentInChildren<RespawnIconScript>().FillImageCompletely();
 	}
 
+	void ResetImageFill(ACompanion companion)
+	{
+		m_iconGameObjects[companion.Index - 1].GetComponentInChildren<RespawnIconScript>().RemoveFill();
+	}
+	
 	public void AssignIcon(ACompanion companion)
 	{
 		m_iconGameObjects[companion.Index - 1].GetComponent<Image>().sprite = companion.IconSprite;

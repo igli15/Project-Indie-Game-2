@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour {
 
-    static int total = 0;
-    static int index = 0;
+    public static int total = 0;
+    public static int index = 0;
 
 	void Start () {
         total++;
