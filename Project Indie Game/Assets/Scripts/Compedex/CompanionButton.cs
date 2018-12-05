@@ -8,7 +8,6 @@ public class CompanionButton : MonoBehaviour, IPointerEnterHandler, IPointerExit
 {
     [SerializeField]
     private Sprite m_description;
-
     [SerializeField]
     private GameObject m_highLighter;
 
