@@ -349,6 +349,7 @@
           </e>
           <e p="Compedex" t="Include">
             <e p="CompanionButton.cs" t="Include" />
+            <e p="UnlockCompanion.cs" t="Include" />
           </e>
           <e p="DummyScripts" t="Include">
             <e p="DummyMoveScript.cs" t="Include" />

@@ -12,9 +12,9 @@ public class CompedexSwitch : MonoBehaviour
     GameObject m_companions;
     [Header("BUTTONS")]
     [SerializeField]
-    Button m_button_notes;
+    UnityEngine.UI.Button m_button_notes;
     [SerializeField]
-    Button m_button_compadex;
+    UnityEngine.UI.Button m_button_compadex;
 
     void Start()
     {
