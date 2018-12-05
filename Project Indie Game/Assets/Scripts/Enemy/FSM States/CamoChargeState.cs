@@ -35,6 +35,8 @@ public class CamoChargeState : AbstractState<EnemyFSM>
 
     void Update()
     {
+       
+
         if (Vector3.Distance(m_departurePos, transform.position) > m_distance)
         {
             Debug.Log("STOP");
@@ -43,6 +45,7 @@ public class CamoChargeState : AbstractState<EnemyFSM>
         }
         else
         {
+           
             m_rigidbody.velocity = m_direction * m_speed;
         }
     }
@@ -53,6 +56,8 @@ public class CamoChargeState : AbstractState<EnemyFSM>
         //Debug.Log("Enemy is null => " + (m_enemy == null));
         //Debug.Log("RigidBody is null => " + (m_rigidbody == null));
         m_direction = m_enemy.direction;
+        
+            //Vector3.Angle(Vector3.zero, m_direction);
         Debug.Log("ENTER CHARGE STATE ||| DIR: " + m_direction);
 
         m_departurePos = transform.position;
@@ -60,6 +65,8 @@ public class CamoChargeState : AbstractState<EnemyFSM>
         m_rigidbody.velocity = m_direction * m_speed;
         m_isCollidedWithplayer = false;
     }
+
+
 
     public override void Exit(IAgent pAgent)
     {
