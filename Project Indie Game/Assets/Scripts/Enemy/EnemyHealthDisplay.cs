@@ -15,6 +15,7 @@ public class EnemyHealthDisplay : MonoBehaviour {
 
     void Awake () {
         m_health.OnHealthDecreased += ChangeHealthValue;
+        m_health.OnDeath += ChangeHealthValue;
         //m_health.OnHealthIncreased += ChangeHealthValue;
         m_camera = Camera.main;
         m_slider.maxValue = 100;
