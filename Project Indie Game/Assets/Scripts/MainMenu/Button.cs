@@ -34,7 +34,6 @@ public class Button : MonoBehaviour,IPointerEnterHandler,IPointerExitHandler
 	{
 		m_brushTweener.Kill();
 		m_brushImage.DOFillAmount(0, m_brushTime);
-		//m_brushImage.fillAmount = 0;
 	}
 
 	public void OnPointerEnter(PointerEventData eventData)
