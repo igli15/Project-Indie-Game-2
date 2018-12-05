@@ -47,4 +47,10 @@ public class ChargeBar : MonoBehaviour
 		m_timeCharging = 0;
 		m_slider.value = 0;
 	}
+
+	private void OnDestroy()
+	{
+		CompanionController.OnMouseCharging -= ChargeSlider;
+		CompanionController.OnMouseRelease -= RestoreSlider;
+	}
 }

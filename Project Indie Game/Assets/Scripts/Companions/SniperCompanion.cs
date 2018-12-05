@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -25,6 +26,9 @@ public class SniperCompanion : Companion
 	private float m_playerInitSpeed;
 
 	private Collider m_collider;
+
+	public Action<SniperCompanion> OnTargetHit;
+	public Action<SniperCompanion> OnPiercingHit;
 	
 	
 	private void Awake()
@@ -73,7 +77,7 @@ public class SniperCompanion : Companion
 		base.Throw(dir.normalized);
 		RaycastHit[] hits;
 		
-		hits = Physics.RaycastAll(transform.position, dir.normalized,dir.magnitude).OrderBy(d=>d.distance).ToArray();
+		hits = Physics.RaycastAll(transform.position, dir.normalized,m_throwRange).OrderBy(d=>d.distance).ToArray();
 
 		for (int i = 0; i < hits.Length; i++)
 		{	
@@ -97,11 +101,13 @@ public class SniperCompanion : Companion
 			{
 				if (other.transform == m_targetEnemy.transform)
 				{
+					if(OnTargetHit != null)OnTargetHit(this);
 					other.GetComponent<Health>().InflictDamage(m_fullDamage);
 					m_manager.DisableCompanion(this);
 				}
 				else
 				{
+					if(OnPiercingHit != null) OnPiercingHit(this);
 					other.GetComponent<Health>().InflictDamage(m_piercingDamage);
 				}
 			}
