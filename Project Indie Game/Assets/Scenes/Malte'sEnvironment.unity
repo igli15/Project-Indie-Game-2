@@ -7672,11 +7672,6 @@ Prefab:
       propertyPath: m_seekRange
       value: 30
       objectReference: {fileID: 0}
-    - target: {fileID: 114172031740315450, guid: b1ec6f3a9621846f6b1341f6c9568fcb,
-        type: 2}
-      propertyPath: m_throwRange
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1ec6f3a9621846f6b1341f6c9568fcb, type: 2}
   m_IsPrefabParent: 0
@@ -8312,12 +8307,12 @@ Prefab:
     - target: {fileID: 198088828907562012, guid: e52b2399126ab497da9d75ba544046dd,
         type: 2}
       propertyPath: ColorModule.gradient.maxGradient.atime1
-      value: 18504
+      value: 2621
       objectReference: {fileID: 0}
     - target: {fileID: 198088828907562012, guid: e52b2399126ab497da9d75ba544046dd,
         type: 2}
       propertyPath: ColorModule.gradient.maxGradient.atime2
-      value: 50693
+      value: 60292
       objectReference: {fileID: 0}
     - target: {fileID: 198088828907562012, guid: e52b2399126ab497da9d75ba544046dd,
         type: 2}
@@ -8333,84 +8328,6 @@ Prefab:
         type: 2}
       propertyPath: ColorModule.gradient.maxGradient.atime3
       value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 198088828907562012, guid: e52b2399126ab497da9d75ba544046dd,
-        type: 2}
-      propertyPath: lengthInSec
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 1968504130949328, guid: e52b2399126ab497da9d75ba544046dd, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1262528518241124, guid: e52b2399126ab497da9d75ba544046dd, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 198088288018901652, guid: e52b2399126ab497da9d75ba544046dd,
-        type: 2}
-      propertyPath: ColorModule.enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 198088288018901652, guid: e52b2399126ab497da9d75ba544046dd,
-        type: 2}
-      propertyPath: ColorModule.gradient.maxGradient.key0.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198088288018901652, guid: e52b2399126ab497da9d75ba544046dd,
-        type: 2}
-      propertyPath: ColorModule.gradient.maxGradient.key2.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 198088288018901652, guid: e52b2399126ab497da9d75ba544046dd,
-        type: 2}
-      propertyPath: ColorModule.gradient.maxGradient.atime1
-      value: 5204
-      objectReference: {fileID: 0}
-    - target: {fileID: 198088288018901652, guid: e52b2399126ab497da9d75ba544046dd,
-        type: 2}
-      propertyPath: ColorModule.gradient.maxGradient.atime2
-      value: 33346
-      objectReference: {fileID: 0}
-    - target: {fileID: 198088288018901652, guid: e52b2399126ab497da9d75ba544046dd,
-        type: 2}
-      propertyPath: ColorModule.gradient.maxGradient.atime3
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 198088288018901652, guid: e52b2399126ab497da9d75ba544046dd,
-        type: 2}
-      propertyPath: ColorModule.gradient.maxGradient.m_NumAlphaKeys
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 198088288018901652, guid: e52b2399126ab497da9d75ba544046dd,
-        type: 2}
-      propertyPath: ColorModule.gradient.maxGradient.atime4
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 198088288018901652, guid: e52b2399126ab497da9d75ba544046dd,
-        type: 2}
-      propertyPath: InitialModule.startSpeed.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 198088288018901652, guid: e52b2399126ab497da9d75ba544046dd,
-        type: 2}
-      propertyPath: InitialModule.startSpeed.minScalar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 198088288018901652, guid: e52b2399126ab497da9d75ba544046dd,
-        type: 2}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 198088288018901652, guid: e52b2399126ab497da9d75ba544046dd,
-        type: 2}
-      propertyPath: InitialModule.size3D
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198088288018901652, guid: e52b2399126ab497da9d75ba544046dd,
-        type: 2}
-      propertyPath: ShapeModule.sphericalDirectionAmount
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e52b2399126ab497da9d75ba544046dd, type: 2}
