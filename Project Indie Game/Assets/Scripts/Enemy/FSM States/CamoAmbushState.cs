@@ -7,6 +7,7 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
     private Health m_health;
     private Camouflage m_enemy;
     private EnemyFSM m_enemyFSM;
+    private Rigidbody m_rigidbody;
 
     [SerializeField]
     private float m_timeTransformToAmbsuh = 1;
@@ -26,6 +27,7 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
         m_health = GetComponent<Health>();
         m_enemyFSM = GetComponent<EnemyFSM>();
         m_enemy = GetComponent<Camouflage>();
+        m_rigidbody = GetComponent<Rigidbody>();
         m_enemy.sphereCollider.OnEnemyTriggerStay += OnSphereTriggerStay;
     }
 
@@ -81,13 +83,12 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
         m_isUnderGround = false;
         HideFromCompanions(true);
         m_enemy.animator.SetBool("attack", true);
-
+        //m_rigidbody.rotation = Quaternion.LookRotation(targetTransform.position - transform.position,transform.up );
         yield return new WaitForSeconds(m_timeTransformOutOfAmbush);
 
         Vector3 dir = targetTransform.position - transform.position;
         dir = new Vector3(dir.x, 0, dir.z);
         dir.Normalize();
-
         Debug.Log("END Transform OUT OF ambush");
         m_enemy.direction = dir;
 

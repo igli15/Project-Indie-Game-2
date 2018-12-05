@@ -33,9 +33,9 @@ public class Health : MonoBehaviour
         {
             if (OnHealthDecreased != null) OnHealthDecreased(this);
             m_health -= damageAmount;
-            Debug.Log("DAMAGE DONE");
+
         }
-        else Debug.Log("DAMAGE IGNORE");
+       // else Debug.Log("DAMAGE IGNORE");
 
     }
 	

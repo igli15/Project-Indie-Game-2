@@ -35,6 +35,8 @@ public class CamoChargeState : AbstractState<EnemyFSM>
 
     void Update()
     {
+       
+
         if (Vector3.Distance(m_departurePos, transform.position) > m_distance)
         {
             Debug.Log("STOP");
@@ -43,6 +45,8 @@ public class CamoChargeState : AbstractState<EnemyFSM>
         }
         else
         {
+            Quaternion toRotation = Quaternion.FromToRotation(transform.forward, m_direction);
+            transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, Time.time);
             m_rigidbody.velocity = m_direction * m_speed;
         }
     }
@@ -62,6 +66,8 @@ public class CamoChargeState : AbstractState<EnemyFSM>
         m_rigidbody.velocity = m_direction * m_speed;
         m_isCollidedWithplayer = false;
     }
+
+
 
     public override void Exit(IAgent pAgent)
     {
