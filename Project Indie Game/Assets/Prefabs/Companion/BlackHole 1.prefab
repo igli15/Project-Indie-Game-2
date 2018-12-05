@@ -865,8 +865,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1800406981951992}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -34.420002, y: 1.1, z: -69.9}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 114.13, y: 0.9391, z: 48.31}
+  m_LocalScale: {x: 0.6220711, y: 0.622071, z: 0.622071}
   m_Children:
   - {fileID: 4029618038054366}
   - {fileID: 4870816335096730}
@@ -1401,7 +1401,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1985828309191996}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4974562507101558}
@@ -1526,8 +1526,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 3.3925722, y: 3.5115275, z: 3.6947732}
-  m_Center: {x: -0.0326941, y: 2.4667046, z: -0.41609693}
+  m_Size: {x: 3.3925722, y: 3.5577083, z: 4.1874185}
+  m_Center: {x: -0.0326941, y: -0.024885893, z: -0.1697743}
 --- !u!95 &95631581594126520
 Animator:
   serializedVersion: 3
@@ -1568,7 +1568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19a62282dffbb43369d9b0b9b0f52a86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_iconSprite: {fileID: 21300000, guid: dbad9834374ae4147b8c9a1a92713eb2, type: 3}
+  m_iconSprite: {fileID: 21300000, guid: de0cdad40de4e488a8409c4dbcf4b81e, type: 3}
   m_respawnTime: 3
   m_chargeTime: 1
   m_throwRange: 6
