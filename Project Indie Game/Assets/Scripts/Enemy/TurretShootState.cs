@@ -60,8 +60,11 @@ public class TurretShootState : AbstractState<EnemyFSM> {
     }
 
     void Update () {
-
-        transform.LookAt(m_enemy.target.transform);
+        Vector3 lookPos = m_enemy.target.transform.position - transform.position;
+        lookPos.y = 0;
+        Quaternion rotation = Quaternion.LookRotation(lookPos);
+        transform.rotation =rotation;
+       // transform.LookAt(m_enemy.target.transform,transform.up);
     }
 
     IEnumerator Shoot()
