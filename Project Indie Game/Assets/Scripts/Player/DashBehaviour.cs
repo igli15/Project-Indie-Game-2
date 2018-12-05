@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DashBehaviour : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class DashBehaviour : MonoBehaviour
 
 	[SerializeField] 
 	private float m_hitOffset = 0.5f;
+
+	[SerializeField] 
+	[Range(0, 0.5f)]
+	private float m_dashTime = 0.3f;
 	
 	[SerializeField] 
 	private float m_abilityCD = 0.5f;
@@ -18,27 +23,36 @@ public class DashBehaviour : MonoBehaviour
 
 	private float m_initDashRange;
 
+	private bool m_dashed = false;
+
+	private DisablePlayer m_disablePlayer;
+
 	public Action<DashBehaviour> OnDash;
+
+	public UnityEvent OnDashStart;
+	public UnityEvent OnDashFinished;
 
 	
 	// Use this for initialization
 	void Start ()
 	{
+		m_disablePlayer = GetComponent<DisablePlayer>();
 		m_initDashRange = m_dashRange;
 		m_initAbilityCD = m_abilityCD;
+		m_abilityCD = 0;
 	}
 
 	private void Update()
 	{
 		m_abilityCD -= Time.deltaTime;
-		if (Input.GetKeyDown(KeyCode.Space) && m_abilityCD < 0)
+		if (!m_dashed && Input.GetKeyDown(KeyCode.Space) && m_abilityCD < 0)
 		{
-			Dash();
+			StartCoroutine("Dash");
 			m_abilityCD = m_initAbilityCD;
 		}
 	}
 
-	public void Dash()
+	IEnumerator Dash()
 	{
 		RaycastHit hit;
 		
@@ -50,7 +64,16 @@ public class DashBehaviour : MonoBehaviour
 			m_dashRange = hit.distance - m_hitOffset;
 		}
 
-		transform.position = transform.position + transform.forward * m_dashRange;
+		Vector3 newPos = transform.position + transform.forward * m_dashRange;
+		OnDashStart.Invoke();
+		m_disablePlayer.Disableplayer();
+		
+		yield return new WaitForSeconds(m_dashTime);
+		
+		m_disablePlayer.ActivatePlayer();
+		OnDashFinished.Invoke();
+		transform.position = newPos;
+		m_dashed = false;
 		
 		m_dashRange = m_initDashRange;
 	}
