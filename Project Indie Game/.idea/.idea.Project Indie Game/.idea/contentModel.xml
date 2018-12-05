@@ -413,6 +413,8 @@
             <e p="CompanionController.cs" t="Include" />
             <e p="CompanionManager.cs" t="Include" />
             <e p="DashBehaviour.cs" t="Include" />
+            <e p="DisableAnimationHandle.cs" t="Include" />
+            <e p="DisablePlayer.cs" t="Include" />
             <e p="Healthbar.cs" t="Include" />
             <e p="Player.cs" t="Include" />
             <e p="PlayerAnimations.cs" t="Include" />
