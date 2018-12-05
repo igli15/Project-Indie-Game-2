@@ -24,7 +24,6 @@ public class TurretShootState : AbstractState<EnemyFSM> {
         m_rangedAttack = GetComponent<EnemyRangedAttack>();
         m_animator = m_enemy.animator;
 
-        m_reloadTime = m_rangedAttack.reloadTime;
         m_enemy.sphereCollider.OnEnemyTriggerExit += OnPlayerExitSpehere;
     }
 
@@ -67,6 +66,7 @@ public class TurretShootState : AbstractState<EnemyFSM> {
 
     IEnumerator Shoot()
     {
+        Debug.Log("RELOAD TIME: " + m_reloadTime);
         while (m_attackIsAllowed)
         {
             yield return new WaitForSeconds(m_reloadTime);
