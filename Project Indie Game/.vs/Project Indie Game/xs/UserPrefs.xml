@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{4B750AAA-A7F4-9CC4-A926-1320902E5D46}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainMenu/Button.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Collectalbes/Collectable.cs">
     <Files>
       <File FileName="Assets/Scripts/CameraFollow.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Companions/SeekerCompanion.cs" Line="37" Column="1" />
@@ -14,7 +14,7 @@
       <File FileName="Assets/Scripts/Companions/RushCompanion.cs" Line="11" Column="19" />
       <File FileName="Assets/Scripts/Companions/ACompanion.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Companions/CompanionSteering.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/DashBehaviour.cs" Line="53" Column="76" />
+      <File FileName="Assets/Scripts/Player/DashBehaviour.cs" Line="53" Column="4" />
       <File FileName="Assets/Scripts/Companions/BlackHole.cs" Line="58" Column="1" />
       <File FileName="Assets/Scripts/Player/CompanionManager.cs" Line="45" Column="47" />
       <File FileName="Assets/Scripts/Player/Healthbar.cs" Line="17" Column="1" />
@@ -29,6 +29,7 @@
       <File FileName="Assets/Scripts/Companions/CompanionEffects.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Enemy/FSM States/CamoAmbushState.cs" Line="17" Column="41" />
       <File FileName="Assets/Scripts/MainMenu/Button.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Collectalbes/Collectable.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
