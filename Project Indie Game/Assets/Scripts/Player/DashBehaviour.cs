@@ -47,6 +47,7 @@ public class DashBehaviour : MonoBehaviour
 		m_abilityCD -= Time.deltaTime;
 		if (!m_dashed && Input.GetKeyDown(KeyCode.Space) && m_abilityCD < 0)
 		{
+
 			StartCoroutine("Dash");
 			m_abilityCD = m_initAbilityCD;
 		}
@@ -55,23 +56,23 @@ public class DashBehaviour : MonoBehaviour
 	IEnumerator Dash()
 	{
 		RaycastHit hit;
-		
 		if (OnDash != null) OnDash(this);
 		
 		if (Physics.Raycast(transform.position, transform.forward * m_dashRange, out hit))
 		{
-			if(hit.transform != transform && hit.distance <= m_dashRange)
+			if(hit.transform != transform && hit.transform.CompareTag("projectileObstacle")&&  hit.distance <= m_dashRange)
 			m_dashRange = hit.distance - m_hitOffset;
 		}
 
 		Vector3 newPos = transform.position + transform.forward * m_dashRange;
 		OnDashStart.Invoke();
 		m_disablePlayer.Disableplayer();
-		
+
 		yield return new WaitForSeconds(m_dashTime);
 		
 		m_disablePlayer.ActivatePlayer();
 		OnDashFinished.Invoke();
+		
 		transform.position = newPos;
 		m_dashed = false;
 		

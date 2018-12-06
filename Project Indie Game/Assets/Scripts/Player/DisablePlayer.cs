@@ -7,7 +7,12 @@ public class DisablePlayer : MonoBehaviour
 
 	[SerializeField]
 	private GameObject m_resolutionScreen;
+
+	[SerializeField]
+	private SkinnedMeshRenderer m_top;
 	
+	[SerializeField]
+	private SkinnedMeshRenderer m_skirt;
 	private GameObject m_model;
 
 	private Player m_player;
@@ -43,7 +48,9 @@ public class DisablePlayer : MonoBehaviour
 			m_resolutionScreen.SetActive(true);
 		}
 		
-		m_model.SetActive(false);
+		//m_model.SetActive(false);
+		m_top.enabled = false;
+		m_skirt.enabled = false;
 		m_player.MoveSpeed = 0;
 		m_companionController.enabled = false;
 		m_companionManager.enabled = false;
@@ -52,7 +59,9 @@ public class DisablePlayer : MonoBehaviour
 
 	public void ActivatePlayer()
 	{
-		m_model.SetActive(true);
+		//m_model.SetActive(true);
+		m_top.enabled = true;
+		m_skirt.enabled = true;
 		m_player.MoveSpeed = m_initMoveSpeed;
 		m_companionController.enabled = true;
 		m_companionManager.enabled = true;

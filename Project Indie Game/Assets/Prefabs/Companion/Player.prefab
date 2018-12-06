@@ -671,7 +671,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1782040561326742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -32.54, y: 0.03, z: -71.8}
+  m_LocalPosition: {x: -42.676, y: 0.37, z: -73.8}
   m_LocalScale: {x: 0.71192515, y: 0.7119246, z: 0.7119246}
   m_Children:
   - {fileID: 4385784727752620}
@@ -1164,7 +1164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75fe813e022b8435db3c5160f61f151d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_dashRange: 10
+  m_dashRange: 5
   m_hitOffset: 0.5
   m_dashTime: 0.3
   m_abilityCD: 2
@@ -1211,8 +1211,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39e3a1c62baca49b48a5da1bd781610f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_moveSpeed: 5
-  m_slowedDownMoveSpeed: 3
+  m_moveSpeed: 6
+  m_slowedDownMoveSpeed: 2
   m_rotationSpeed: 800
 --- !u!114 &114480816986277368
 MonoBehaviour:
@@ -1237,6 +1237,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_resolutionScreen: {fileID: 0}
+  m_top: {fileID: 137867246207212754}
+  m_skirt: {fileID: 137457724685755420}
 --- !u!114 &114647609947752274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1375,8 +1377,8 @@ SkinnedMeshRenderer:
   m_BlendShapeWeights: []
   m_RootBone: {fileID: 4087875553690790}
   m_AABB:
-    m_Center: {x: -0.04953003, y: 3.3884583, z: -0.093678474}
-    m_Extent: {x: 13.0107, y: 14.186526, z: 11.471878}
+    m_Center: {x: -0.04953003, y: 3.3884735, z: -0.09366226}
+    m_Extent: {x: 13.0107, y: 14.186527, z: 11.471879}
   m_DirtyAABB: 0
 --- !u!137 &137867246207212754
 SkinnedMeshRenderer:
@@ -4724,8 +4726,8 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.24809161
         - serializedVersion: 3
-          time: 0.6336722
-          value: 0.81905186
+          time: 0.4629416
+          value: 0.5920774
           inSlope: -0.68944174
           outSlope: -0.68944174
           tangentMode: 0
@@ -4733,7 +4735,7 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 1
+          time: 0.7268219
           value: 0
           inSlope: -2.0444965
           outSlope: -2.0444965
@@ -9330,8 +9332,8 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.17779389
         - serializedVersion: 3
-          time: 1
-          value: 0.7387661
+          time: 0.31219563
+          value: 0.6433681
           inSlope: 0.27546957
           outSlope: 0.27546957
           tangentMode: 0
