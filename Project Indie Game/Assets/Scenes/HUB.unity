@@ -14208,7 +14208,7 @@ MonoBehaviour:
   sounds:
   - name: turretHit
     clip: {fileID: 8300000, guid: 0932af2b44466e94489d760ac6e1485e, type: 3}
-    volume: 0.238
+    volume: 1
     pitch: 1
     spatialBlend: 0
     doplerEffect: 0.5
@@ -14217,7 +14217,7 @@ MonoBehaviour:
     audioSource: {fileID: 0}
   - name: warp
     clip: {fileID: 8300000, guid: 548ca11261ab12142a76a57aaff55860, type: 3}
-    volume: 0.08
+    volume: 0.8
     pitch: 1
     spatialBlend: 0
     doplerEffect: 0.5
@@ -14226,7 +14226,7 @@ MonoBehaviour:
     audioSource: {fileID: 0}
   - name: background_1
     clip: {fileID: 8300000, guid: d831edf4cdf7fbd4a9a14c388e5d403a, type: 3}
-    volume: 0.03
+    volume: 0.5
     pitch: 1
     spatialBlend: 0
     doplerEffect: 0.5
@@ -14235,7 +14235,7 @@ MonoBehaviour:
     audioSource: {fileID: 0}
   - name: background_2
     clip: {fileID: 8300000, guid: c9bf294324cf7d14ab147f462ecc8145, type: 3}
-    volume: 0.03
+    volume: 0.2
     pitch: 1
     spatialBlend: 0
     doplerEffect: 0.5
@@ -14244,7 +14244,7 @@ MonoBehaviour:
     audioSource: {fileID: 0}
   - name: playerDeath
     clip: {fileID: 8300000, guid: 49cc7b040c94d9f44b2bb3fd686ac9ea, type: 3}
-    volume: 0.403
+    volume: 0.8
     pitch: 1
     spatialBlend: 0
     doplerEffect: 0.5
@@ -14253,7 +14253,7 @@ MonoBehaviour:
     audioSource: {fileID: 0}
   - name: enemySpawn
     clip: {fileID: 8300000, guid: cc66efab466a1bb489b731b01ed2d9c7, type: 3}
-    volume: 0.308
+    volume: 0.8
     pitch: 1
     spatialBlend: 0
     doplerEffect: 0.5
@@ -14262,7 +14262,7 @@ MonoBehaviour:
     audioSource: {fileID: 0}
   - name: launch
     clip: {fileID: 8300000, guid: 55412cb9e02815f4b91aa3dfde7b6615, type: 3}
-    volume: 0.118
+    volume: 0.6
     pitch: 1
     spatialBlend: 0
     doplerEffect: 0.5
@@ -14271,7 +14271,7 @@ MonoBehaviour:
     audioSource: {fileID: 0}
   - name: companionHit
     clip: {fileID: 8300000, guid: fa1e3ce19e6c3d049b20f8bf71c8d9dc, type: 3}
-    volume: 0.277
+    volume: 0.8
     pitch: 1
     spatialBlend: 0
     doplerEffect: 0.5
