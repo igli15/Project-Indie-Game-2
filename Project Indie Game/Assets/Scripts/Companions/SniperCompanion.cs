@@ -21,9 +21,6 @@ public class SniperCompanion : Companion
 	
 	private GameObject m_targetEnemy;
 
-	private Player m_player;
-
-	private float m_playerInitSpeed;
 
 	private Collider m_collider;
 
@@ -40,10 +37,7 @@ public class SniperCompanion : Companion
 	// Use this for initialization
 	void Start ()
 	{
-		m_player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-		m_playerInitSpeed = m_player.MoveSpeed;
-		
-		OnStartCharging += delegate(ACompanion companion) {m_player.MoveSpeed -= m_playerSlowAmount;};
+
 	}
 	
 	void Update () 
@@ -65,14 +59,13 @@ public class SniperCompanion : Companion
 	{
 		m_collider.enabled = false;
 		m_targetEnemy = null;
-		m_player.MoveSpeed = m_playerInitSpeed;
+
 		base.Reset();
 	}
 
 	public override void Throw(Vector3 dir)
 	{
 		m_collider.enabled = true;
-		m_player.MoveSpeed = m_playerInitSpeed;
 		
 		base.Throw(dir.normalized);
 		RaycastHit[] hits;
