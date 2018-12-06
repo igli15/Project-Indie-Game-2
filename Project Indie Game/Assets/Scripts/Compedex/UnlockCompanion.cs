@@ -17,6 +17,14 @@ public class UnlockCompanion : MonoBehaviour {
         m_button.enabled = false;
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            UnlockIcon();
+        }
+    }
+
     public void UnlockIcon()
     {
         m_image.sprite = m_unlockedIcon;
