@@ -13,6 +13,10 @@ public class DisablePlayer : MonoBehaviour
 	
 	[SerializeField]
 	private SkinnedMeshRenderer m_skirt;
+
+    [SerializeField]
+    private Collider m_collider;
+
 	private GameObject m_model;
 
 	private Player m_player;
@@ -47,8 +51,9 @@ public class DisablePlayer : MonoBehaviour
 		{
 			m_resolutionScreen.SetActive(true);
 		}
-		
-		//m_model.SetActive(false);
+
+        //m_model.SetActive(false);
+        m_collider.enabled = false;
 		m_top.enabled = false;
 		m_skirt.enabled = false;
 		m_player.MoveSpeed = 0;
@@ -59,8 +64,9 @@ public class DisablePlayer : MonoBehaviour
 
 	public void ActivatePlayer()
 	{
-		//m_model.SetActive(true);
-		m_top.enabled = true;
+        //m_model.SetActive(true);
+        m_collider.enabled = true;
+        m_top.enabled = true;
 		m_skirt.enabled = true;
 		m_player.MoveSpeed = m_initMoveSpeed;
 		m_companionController.enabled = true;

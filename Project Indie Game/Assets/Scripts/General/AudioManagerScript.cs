@@ -43,9 +43,10 @@ public class AudioManagerScript : MonoBehaviour
 			sound.audioSource.loop = sound.loop;
 			sound.audioSource.rolloffMode = sound.RollOffMode;
 		}
-		
-		
-	}
+
+        PlaySound("background_1");
+        PlaySound("background_2");
+    }
 
 
 	public void PlaySound(string soundName )

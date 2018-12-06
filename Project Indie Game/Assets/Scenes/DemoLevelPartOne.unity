@@ -4891,6 +4891,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114764413093048750, guid: aaba7b40ae4f22344854053706b9e9d8,
+        type: 2}
+      propertyPath: OnDashStart.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4827141860600050, guid: aaba7b40ae4f22344854053706b9e9d8, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4985,7 +4990,7 @@ Prefab:
     - target: {fileID: 224479450747830336, guid: aaba7b40ae4f22344854053706b9e9d8,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 2.414978
+      value: 2.415039
       objectReference: {fileID: 0}
     - target: {fileID: 224479450747830336, guid: aaba7b40ae4f22344854053706b9e9d8,
         type: 2}
@@ -5057,6 +5062,41 @@ Prefab:
       propertyPath: m_dashTime
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 114764413093048750, guid: aaba7b40ae4f22344854053706b9e9d8,
+        type: 2}
+      propertyPath: OnDashStart.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114764413093048750, guid: aaba7b40ae4f22344854053706b9e9d8,
+        type: 2}
+      propertyPath: OnDashStart.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114764413093048750, guid: aaba7b40ae4f22344854053706b9e9d8,
+        type: 2}
+      propertyPath: OnDashStart.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1645746821}
+    - target: {fileID: 114764413093048750, guid: aaba7b40ae4f22344854053706b9e9d8,
+        type: 2}
+      propertyPath: OnDashStart.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlaySound
+      objectReference: {fileID: 0}
+    - target: {fileID: 114764413093048750, guid: aaba7b40ae4f22344854053706b9e9d8,
+        type: 2}
+      propertyPath: OnDashStart.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114764413093048750, guid: aaba7b40ae4f22344854053706b9e9d8,
+        type: 2}
+      propertyPath: OnDashStart.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: warp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114472938579365960, guid: aaba7b40ae4f22344854053706b9e9d8,
+        type: 2}
+      propertyPath: m_collider
+      value: 
+      objectReference: {fileID: 829599126}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aaba7b40ae4f22344854053706b9e9d8, type: 2}
   m_IsPrefabParent: 0
@@ -6154,6 +6194,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f8e442c406d6784da00ec0428b9f738, type: 3}
   m_IsPrefabParent: 0
+--- !u!136 &829599126 stripped
+CapsuleCollider:
+  m_PrefabParentObject: {fileID: 136528791563573382, guid: aaba7b40ae4f22344854053706b9e9d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 637999881}
 --- !u!4 &863850791 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 2f8e442c406d6784da00ec0428b9f738, type: 3}
@@ -10058,6 +10103,83 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f8e442c406d6784da00ec0428b9f738, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1645746820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1645746822}
+  - component: {fileID: 1645746821}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1645746821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1645746820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e5d97f3141780544a4dd6dc2fbe46a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: turretHit
+    clip: {fileID: 8300000, guid: 0932af2b44466e94489d760ac6e1485e, type: 3}
+    volume: 0.238
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0.5
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: warp
+    clip: {fileID: 8300000, guid: 548ca11261ab12142a76a57aaff55860, type: 3}
+    volume: 0.08
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0.5
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: background_1
+    clip: {fileID: 8300000, guid: d831edf4cdf7fbd4a9a14c388e5d403a, type: 3}
+    volume: 0.03
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0.5
+    loop: 1
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: background_2
+    clip: {fileID: 8300000, guid: c9bf294324cf7d14ab147f462ecc8145, type: 3}
+    volume: 0.03
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0.5
+    loop: 1
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+--- !u!4 &1645746822
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1645746820}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 35.29986, y: 11.573998, z: 51.556633}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1646079714
 GameObject:
   m_ObjectHideFlags: 0
