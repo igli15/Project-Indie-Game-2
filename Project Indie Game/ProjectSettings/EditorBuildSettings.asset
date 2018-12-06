@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/IgliScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
     path: Assets/Scenes/GreyBox.unity
     guid: 347ebc38590ef2746a0b93bc17ac17e5
+  - enabled: 1
+    path: Assets/Scenes/HUB.unity
+    guid: 109988919aa05cd4c867133789ef49f0
+  - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: e729c616f82da494888153b0adc8bfd0
   m_configObjects: {}
