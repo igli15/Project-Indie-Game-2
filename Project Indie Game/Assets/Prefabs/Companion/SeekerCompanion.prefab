@@ -1359,8 +1359,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1040033935331438}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.7, y: 0.56556, z: -72.1}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: -45.64, y: 0.85083, z: -71.1}
+  m_LocalScale: {x: 0.3076065, y: 0.3076065, z: 0.3076065}
   m_Children:
   - {fileID: 4408053218900554}
   - {fileID: 4647757670507404}
@@ -1656,7 +1656,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 2
+  m_Time: 0.5
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 1
@@ -1665,7 +1665,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.6603775
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1673,8 +1673,8 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.88301885
-        value: 0.93421054
+        time: 0.73555756
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1686,9 +1686,9 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.9811321, g: 0.8375909, b: 0.11569952, a: 1}
+      key0: {r: 1, g: 0.9880785, b: 0, a: 0}
       key1: {r: 1, g: 1, b: 1, a: 1}
-      key2: {r: 0, g: 0, b: 0, a: 0}
+      key2: {r: 0, g: 0, b: 0, a: 1}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -1703,16 +1703,16 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
-      atime2: 0
-      atime3: 0
+      atime1: 2621
+      atime2: 60292
+      atime3: 60909
       atime4: 0
       atime5: 0
       atime6: 0
       atime7: 0
       m_Mode: 0
       m_NumColorKeys: 2
-      m_NumAlphaKeys: 2
+      m_NumAlphaKeys: 4
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
@@ -1731,13 +1731,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce8ba38ccf78540f0ae5ca34265786b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_iconSprite: {fileID: 21300000, guid: e25ad9c9e86154e67803eec2fb3a5733, type: 3}
+  m_iconSprite: {fileID: 21300000, guid: 328d12356677944b6bfaf62adf79c4de, type: 3}
   m_respawnTime: 2
   m_chargeTime: 0.5
-  m_throwRange: 7
+  m_throwRange: 10
   m_manager: {fileID: 0}
   m_throwSpeed: 20
-  m_seekRange: 15
+  m_seekRange: 12
   m_bounceAmount: 6
   m_damageDealt: 25
 --- !u!114 &114190756962812634
