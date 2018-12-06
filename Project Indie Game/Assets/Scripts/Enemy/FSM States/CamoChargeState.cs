@@ -13,6 +13,8 @@ public class CamoChargeState : AbstractState<EnemyFSM>
     private Vector3 m_departurePos;
 
     [SerializeField]
+    private float m_estimatedTimeOfCharge = 4;
+    [SerializeField]
     private float m_damage = 1;
     [SerializeField]
     private float m_pushForce = 2;
@@ -62,16 +64,24 @@ public class CamoChargeState : AbstractState<EnemyFSM>
 
         m_departurePos = transform.position;
 
+        StartCoroutine(CheckOnTime());
+
         m_rigidbody.velocity = m_direction * m_speed;
         m_isCollidedWithplayer = false;
         m_enemy.SetRushParticlesActive(true);
     }
 
-
+    IEnumerator CheckOnTime()
+    {
+        yield return new WaitForSecondsRealtime(m_estimatedTimeOfCharge);
+        Debug.Log("TIME_OUT_CAMOUFLAGE_GUY");
+        m_enemyFSM.fsm.ChangeState<CamoAmbushState>();
+    }
 
     public override void Exit(IAgent pAgent)
     {
         base.Exit(pAgent);
+        StopAllCoroutines();
         Debug.Log("EXIT CHARGE STATE");
         m_enemy.SetRushParticlesActive(false);
     }
