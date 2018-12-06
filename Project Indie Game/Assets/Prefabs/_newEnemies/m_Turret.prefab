@@ -998,7 +998,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1133601379900244}
   m_LocalRotation: {x: -0, y: 0.6880239, z: -0, w: 0.72568804}
-  m_LocalPosition: {x: 25.21, y: 10.803563, z: 53.411945}
+  m_LocalPosition: {x: 115.50641, y: 0, z: 54.286667}
   m_LocalScale: {x: 0.5000001, y: 0.5, z: 0.5000001}
   m_Children:
   - {fileID: 224475425908242490}
@@ -1659,8 +1659,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.8001364, y: 6.1134396, z: 1.8441195}
-  m_Center: {x: -0.40006542, y: 2.5567198, z: -0.42206}
+  m_Size: {x: 4.208657, y: 6.1134396, z: 2.8153827}
+  m_Center: {x: -0.12029137, y: 2.5567198, z: 0.42000037}
 --- !u!65 &65061323153762144
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1877,7 +1877,7 @@ MonoBehaviour:
   m_timeBeforeDestroy: 2
   m_moveSpeed: 5
   m_pushPower: 2
-  m_percantageOfDropingLoot: 25
+  m_percantageOfDropingLoot: 20
   m_animator: {fileID: 95977914710622878}
   m_enemyDamageCollider: {fileID: 0}
   m_sphereCollider: {fileID: 114876499570872664}
