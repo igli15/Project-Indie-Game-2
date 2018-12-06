@@ -10210,7 +10210,7 @@ MonoBehaviour:
     RollOffMode: 0
     audioSource: {fileID: 0}
   - name: playerDeath
-    clip: {fileID: 8300000, guid: f49e10a85bde06a428a8543478a7ce7e, type: 3}
+    clip: {fileID: 8300000, guid: 49cc7b040c94d9f44b2bb3fd686ac9ea, type: 3}
     volume: 0.403
     pitch: 1
     spatialBlend: 0
@@ -10221,6 +10221,24 @@ MonoBehaviour:
   - name: enemySpawn
     clip: {fileID: 8300000, guid: cc66efab466a1bb489b731b01ed2d9c7, type: 3}
     volume: 0.308
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0.5
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: launch
+    clip: {fileID: 8300000, guid: 55412cb9e02815f4b91aa3dfde7b6615, type: 3}
+    volume: 0.118
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0.5
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: companionHit
+    clip: {fileID: 8300000, guid: fa1e3ce19e6c3d049b20f8bf71c8d9dc, type: 3}
+    volume: 0.277
     pitch: 1
     spatialBlend: 0
     doplerEffect: 0.5

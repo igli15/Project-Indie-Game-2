@@ -49,8 +49,11 @@ public class BlackHoleCompanion : Companion
 	{
 		if (other.transform.CompareTag("Obstacle") || other.transform.CompareTag("Enemy"))
 		{
-			if(m_isThrown)
-			Activate();
+            if (m_isThrown)
+            {
+                Activate();
+                AudioManagerScript.instance.PlaySound("companionHit");
+            }
 		}
 	}
 

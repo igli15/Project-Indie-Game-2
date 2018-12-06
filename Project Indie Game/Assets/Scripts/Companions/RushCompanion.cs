@@ -77,7 +77,8 @@ public class RushCompanion : Companion {
 
 		if (m_isThrown)
 		{
-			for (int i = 0; i < m_enemiesCaught.Count; i++)
+            AudioManagerScript.instance.PlaySound("companionHit");
+            for (int i = 0; i < m_enemiesCaught.Count; i++)
 			{
 				if (m_enemiesCaught[i] != null)
 				{

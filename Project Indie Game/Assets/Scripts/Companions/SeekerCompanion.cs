@@ -73,8 +73,9 @@ public class SeekerCompanion : Companion
 		if (other.CompareTag("Enemy") && IsThrown)
 		{
 			 m_hitFirstEnemy = true;
+            AudioManagerScript.instance.PlaySound("companionHit");
 
-			List<GameObject> enemiesInRange = GetAllEnemiesInRange(other.transform);  //Fill the list
+            List<GameObject> enemiesInRange = GetAllEnemiesInRange(other.transform);  //Fill the list
 			other.GetComponent<Health>().InflictDamage(m_damageDealt);   //Inflict Damage
 			m_bounceAmount -= 1;  							 // it bounced once 
 			if(enemiesInRange.Count == 0 ) m_bounceAmount = 0;

@@ -71,7 +71,9 @@ public class Companion : ACompanion
 	{
 		if (OnThrow != null) OnThrow(this);
 		transform.SetParent(null,true);
-		
+
+        AudioManagerScript.instance.PlaySound("launch");
+
 		m_steering.StopAgent();
 		m_steering.NavMeshAgent.enabled = false;
 		m_isCharged = false;

@@ -80,6 +80,7 @@ public class SniperCompanion : Companion
 			}
 			if (hits[i].transform.CompareTag("Enemy"))
 			{
+                AudioManagerScript.instance.PlaySound("companionHit");
 				m_targetEnemy = hits[i].transform.gameObject;
 			}
 		}
