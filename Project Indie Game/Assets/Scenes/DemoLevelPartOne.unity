@@ -10209,6 +10209,24 @@ MonoBehaviour:
     loop: 1
     RollOffMode: 0
     audioSource: {fileID: 0}
+  - name: playerDeath
+    clip: {fileID: 8300000, guid: f49e10a85bde06a428a8543478a7ce7e, type: 3}
+    volume: 0.403
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0.5
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: enemySpawn
+    clip: {fileID: 8300000, guid: cc66efab466a1bb489b731b01ed2d9c7, type: 3}
+    volume: 0.308
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0.5
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}
 --- !u!4 &1645746822
 Transform:
   m_ObjectHideFlags: 0

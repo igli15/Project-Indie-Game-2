@@ -45,6 +45,7 @@ public class EnemyZone : MonoBehaviour {
         {
             spawner.SpawnParticleEffect();
         }
+        AudioManagerScript.instance.PlaySound("enemySpawn");
 
         yield return new WaitForSecondsRealtime(seconds);
         CallNextWave();

@@ -49,6 +49,7 @@ public class DisablePlayer : MonoBehaviour
 	{
 		if (m_health.GetCurrentHealth <= 0.1f)
 		{
+            AudioManagerScript.instance.PlaySound("playerDeath");
 			m_resolutionScreen.SetActive(true);
 		}
 
