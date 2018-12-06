@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a3bdb2cd68f901469e7cc149151eb49, type: 3}
-  m_Name: PostProccessing
+  m_Name: PostProccessing-Level
   m_EditorClassIdentifier: 
   debugViews:
     m_Enabled: 1
@@ -71,7 +71,7 @@ MonoBehaviour:
   depthOfField:
     m_Enabled: 1
     m_Settings:
-      focusDistance: 49.8
+      focusDistance: 46.5
       aperture: 1.1
       focalLength: 210
       useCameraFov: 0
@@ -83,7 +83,7 @@ MonoBehaviour:
       sampleCount: 10
       frameBlending: 0
   eyeAdaptation:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       lowPercent: 45
       highPercent: 95
@@ -109,23 +109,23 @@ MonoBehaviour:
         texture: {fileID: 0}
         intensity: 3
   colorGrading:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       tonemapping:
-        tonemapper: 1
-        neutralBlackIn: 0.02
-        neutralWhiteIn: 10
-        neutralBlackOut: 0
-        neutralWhiteOut: 10
-        neutralWhiteLevel: 5.3
+        tonemapper: 2
+        neutralBlackIn: 0.0592
+        neutralWhiteIn: 9.92
+        neutralBlackOut: -0.0162
+        neutralWhiteOut: 1
+        neutralWhiteLevel: 2.2
         neutralWhiteClip: 10
       basic:
         postExposure: 1.51
-        temperature: -6.2
+        temperature: -7.1
         tint: 0
         hueShift: 0
-        saturation: 0.84
-        contrast: 1.044
+        saturation: 1.053
+        contrast: 0.636
       channelMixer:
         red: {x: 1, y: 0, z: 0}
         green: {x: 0, y: 1, z: 0}
