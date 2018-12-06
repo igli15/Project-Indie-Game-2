@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.023445154, g: 0.024506677, b: 0.02794433, a: 1}
+  m_IndirectSpecularColor: {r: 0.02344515, g: 0.02450667, b: 0.027944822, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14178,6 +14178,119 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 397348501}
   m_Mesh: {fileID: 4300002, guid: 22d5fe0e3a46d0a47bb3c3e74b973ac9, type: 3}
+--- !u!1 &397612905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 397612907}
+  - component: {fileID: 397612906}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &397612906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 397612905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e5d97f3141780544a4dd6dc2fbe46a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: turretHit
+    clip: {fileID: 8300000, guid: 0932af2b44466e94489d760ac6e1485e, type: 3}
+    volume: 0.238
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0.5
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: warp
+    clip: {fileID: 8300000, guid: 548ca11261ab12142a76a57aaff55860, type: 3}
+    volume: 0.08
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0.5
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: background_1
+    clip: {fileID: 8300000, guid: d831edf4cdf7fbd4a9a14c388e5d403a, type: 3}
+    volume: 0.03
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0.5
+    loop: 1
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: background_2
+    clip: {fileID: 8300000, guid: c9bf294324cf7d14ab147f462ecc8145, type: 3}
+    volume: 0.03
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0.5
+    loop: 1
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: playerDeath
+    clip: {fileID: 8300000, guid: 49cc7b040c94d9f44b2bb3fd686ac9ea, type: 3}
+    volume: 0.403
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0.5
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: enemySpawn
+    clip: {fileID: 8300000, guid: cc66efab466a1bb489b731b01ed2d9c7, type: 3}
+    volume: 0.308
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0.5
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: launch
+    clip: {fileID: 8300000, guid: 55412cb9e02815f4b91aa3dfde7b6615, type: 3}
+    volume: 0.118
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0.5
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+  - name: companionHit
+    clip: {fileID: 8300000, guid: fa1e3ce19e6c3d049b20f8bf71c8d9dc, type: 3}
+    volume: 0.277
+    pitch: 1
+    spatialBlend: 0
+    doplerEffect: 0.5
+    loop: 0
+    RollOffMode: 0
+    audioSource: {fileID: 0}
+--- !u!4 &397612907
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 397612905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 35.29986, y: 11.573998, z: 51.556633}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &398072797
 GameObject:
   m_ObjectHideFlags: 0
@@ -21858,6 +21971,7 @@ MonoBehaviour:
   m_resolutionScreen: {fileID: 313224208}
   m_top: {fileID: 1678966637}
   m_skirt: {fileID: 1584136953}
+  m_collider: {fileID: 523486865}
 --- !u!114 &523486864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21969,6 +22083,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 397612906}
+        m_MethodName: PlaySound
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: warp
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
