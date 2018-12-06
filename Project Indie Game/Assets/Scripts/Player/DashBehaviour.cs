@@ -14,7 +14,7 @@ public class DashBehaviour : MonoBehaviour
 	private float m_hitOffset = 0.5f;
 
 	[SerializeField] 
-	[Range(0, 0.5f)]
+	[Range(0, 3f)]
 	private float m_dashTime = 0.3f;
 	
 	[SerializeField] 

@@ -504,7 +504,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1356805430267124}
   m_LocalRotation: {x: -0, y: 0.6880239, z: -0, w: 0.72568804}
-  m_LocalPosition: {x: 33.768105, y: 10.803563, z: 52.69732}
+  m_LocalPosition: {x: 120.15762, y: 0.00000047683716, z: 52.675964}
   m_LocalScale: {x: 0.5000001, y: 0.5, z: 0.5000001}
   m_Children:
   - {fileID: 224489661265728986}
@@ -629,7 +629,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1302026515071300}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -950,9 +950,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_timeBeforeDestroy: 0.5
-  m_moveSpeed: 3.5
+  m_moveSpeed: 2.5
   m_pushPower: 2
-  m_percantageOfDropingLoot: 15
+  m_percantageOfDropingLoot: 10
   m_animator: {fileID: 95455749073561518}
   m_enemyDamageCollider: {fileID: 114987016694611742}
   m_sphereCollider: {fileID: 114240598181652592}
