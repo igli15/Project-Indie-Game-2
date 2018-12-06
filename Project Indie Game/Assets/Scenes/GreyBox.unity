@@ -3958,7 +3958,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f1a7b154d4dc149cc8dad0711a6a8027, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9c916dd80c941411491e85f480c96c53, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7394,6 +7394,26 @@ Prefab:
       propertyPath: m_resolutionScreen
       value: 
       objectReference: {fileID: 484523161}
+    - target: {fileID: 137457724685755420, guid: e8eef3dd61ddb4061b5bec29c200f7f0,
+        type: 2}
+      propertyPath: m_AABB.m_Center.y
+      value: 3.3884583
+      objectReference: {fileID: 0}
+    - target: {fileID: 137457724685755420, guid: e8eef3dd61ddb4061b5bec29c200f7f0,
+        type: 2}
+      propertyPath: m_AABB.m_Center.z
+      value: -0.093678474
+      objectReference: {fileID: 0}
+    - target: {fileID: 137457724685755420, guid: e8eef3dd61ddb4061b5bec29c200f7f0,
+        type: 2}
+      propertyPath: m_AABB.m_Extent.y
+      value: 14.186526
+      objectReference: {fileID: 0}
+    - target: {fileID: 137457724685755420, guid: e8eef3dd61ddb4061b5bec29c200f7f0,
+        type: 2}
+      propertyPath: m_AABB.m_Extent.z
+      value: 11.471878
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e8eef3dd61ddb4061b5bec29c200f7f0, type: 2}
   m_IsPrefabParent: 0
