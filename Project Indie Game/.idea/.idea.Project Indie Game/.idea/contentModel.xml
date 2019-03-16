@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="/6aaef9f6" t="IncludeRecursive" />
     <e p="/app" t="IncludeRecursive" />
-    <e p="/e3b27c9e" t="IncludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
@@ -23,6 +23,66 @@
         </e>
         <e p="Editor" t="Include">
           <e p="FMODMigrationUtil.cs" t="Include" />
+        </e>
+        <e p="EntranceCollider.cs" t="Include" />
+        <e p="FMOD" t="Include">
+          <e p="IndieMusic" t="Include">
+            <e p="Metadata" t="Include">
+              <e p="Asset" t="Include">
+                <e p="{2d3f9cf1-f8fb-4f49-8502-0d8d2c838c54}.xml" t="Include" />
+              </e>
+              <e p="AudioFile" t="Include">
+                <e p="{1395f4f3-c183-49c9-b875-667d4e452bed}.xml" t="Include" />
+                <e p="{4e3f8ff6-355e-4fa2-9e53-c65d120ac5d3}.xml" t="Include" />
+                <e p="{a6b9a844-f687-46cc-a94b-9a7ac50d7093}.xml" t="Include" />
+                <e p="{a88baaaa-a1df-4c3d-b722-ecf6dec7ef6b}.xml" t="Include" />
+              </e>
+              <e p="Bank" t="Include">
+                <e p="{44a151e3-16b4-449e-9d73-f011003f7158}.xml" t="Include" />
+                <e p="{f52c3eaf-c4b9-4090-b6ad-fb1c44ed0bca}.xml" t="Include" />
+              </e>
+              <e p="BankFolder" t="Include">
+                <e p="{12de1e8c-f271-4fc5-87b6-6f7bc7414e4e}.xml" t="Include" />
+              </e>
+              <e p="EffectPresetFolder" t="Include">
+                <e p="{431116b2-f57d-436d-a22e-e829ac8a89be}.xml" t="Include" />
+              </e>
+              <e p="EncodingSetting" t="Include">
+                <e p="{0862b305-e525-4375-8b45-d28cbdcd5433}.xml" t="Include" />
+              </e>
+              <e p="Event" t="Include">
+                <e p="{805d52d6-5d33-4135-827e-a05d7f71dee0}.xml" t="Include" />
+                <e p="{9803031b-af47-44c1-9cff-e36fa47cdce6}.xml" t="Include" />
+              </e>
+              <e p="EventFolder" t="Include">
+                <e p="{32f59a68-a0ee-4c93-99a0-7091e266f3cc}.xml" t="Include" />
+              </e>
+              <e p="Master.xml" t="Include" />
+              <e p="Mixer.xml" t="Include" />
+              <e p="ParameterPreset" t="Include">
+                <e p="{35031a8d-3da6-4251-845d-2055151ca1a6}.xml" t="Include" />
+                <e p="{6bc88090-5e04-4327-a8bc-fd5746cbc571}.xml" t="Include" />
+              </e>
+              <e p="ParameterPresetFolder" t="Include">
+                <e p="{9fd62961-1063-49c6-9326-df34a7ac33c6}.xml" t="Include" />
+                <e p="{db77aa2a-0e13-412f-8c8f-db0878dc9918}.xml" t="Include" />
+              </e>
+              <e p="Platform" t="Include">
+                <e p="{e307a91b-6412-498a-8481-23245a7c34fe}.xml" t="Include" />
+              </e>
+              <e p="Return" t="Include">
+                <e p="{0f5aee32-bc71-49bf-b4d4-b7d9500b2d8d}.xml" t="Include" />
+              </e>
+              <e p="Snapshot" t="Include">
+                <e p="{0d2d7c62-5482-4f39-95ce-2e391290c38a}.xml" t="Include" />
+              </e>
+              <e p="SnapshotGroup" t="Include">
+                <e p="{25434ae9-0ec3-498f-b22e-d7b8c4b79580}.xml" t="Include" />
+              </e>
+              <e p="Tags.xml" t="Include" />
+              <e p="Workspace.xml" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="GoogleVR" t="Include">
           <e p="Editor" t="Include">
@@ -261,21 +321,36 @@
             <e p="FmodResonanceAudioRoom.cs" t="Include" />
           </e>
         </e>
+        <e p="Scenes" t="Include">
+          <e p="test.txt" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="AchievementPopUp.cs" t="Include" />
           <e p="AimProjector.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
+          <e p="Collectalbes" t="Include">
+            <e p="Collectable.cs" t="Include" />
+            <e p="HealthPotions.cs" t="Include" />
+          </e>
           <e p="Companions" t="Include">
             <e p="ACompanion.cs" t="Include" />
             <e p="BlackHole.cs" t="Include" />
             <e p="BlackHoleCompanion.cs" t="Include" />
             <e p="Companion.cs" t="Include" />
             <e p="CompanionAnimation.cs" t="Include" />
+            <e p="CompanionEffects.cs" t="Include" />
             <e p="CompanionSteering.cs" t="Include" />
             <e p="RushCompanion.cs" t="Include" />
+            <e p="RushEffects.cs" t="Include" />
             <e p="RushHitbox.cs" t="Include" />
             <e p="SeekerCompanion.cs" t="Include" />
+            <e p="SeekerEffects.cs" t="Include" />
             <e p="SniperCompanion.cs" t="Include" />
+            <e p="SniperEffects.cs" t="Include" />
+          </e>
+          <e p="Compedex" t="Include">
+            <e p="CompanionButton.cs" t="Include" />
+            <e p="UnlockCompanion.cs" t="Include" />
           </e>
           <e p="DummyScripts" t="Include">
             <e p="DummyMoveScript.cs" t="Include" />
@@ -286,6 +361,7 @@
             <e p="EnemyDamageCollider.cs" t="Include" />
             <e p="EnemyFSM.cs" t="Include" />
             <e p="EnemyHealthDisplay.cs" t="Include" />
+            <e p="EnemyLoot.cs" t="Include" />
             <e p="EnemyMeleeAttack.cs" t="Include" />
             <e p="EnemyMovement.cs" t="Include" />
             <e p="EnemyRangedAttack.cs" t="Include" />
@@ -308,6 +384,7 @@
             <e p="Wave.cs" t="Include" />
           </e>
           <e p="General" t="Include">
+            <e p="CollectableBehaviour.cs" t="Include" />
             <e p="DummyDamage.cs" t="Include" />
             <e p="FSM" t="Include">
               <e p="AbstractState.cs" t="Include" />
@@ -321,20 +398,32 @@
           </e>
           <e p="HudScripts" t="Include">
             <e p="ChargeBar.cs" t="Include" />
+            <e p="CompedexDescription.cs" t="Include" />
+            <e p="CompedexSwitch.cs" t="Include" />
             <e p="Cursor.cs" t="Include" />
             <e p="HudManager.cs" t="Include" />
             <e p="RespawnIconScript.cs" t="Include" />
             <e p="RotateTowardsGoal.cs" t="Include" />
           </e>
+          <e p="LevelLoader.cs" t="Include" />
+          <e p="MainMenu" t="Include">
+            <e p="Button.cs" t="Include" />
+            <e p="CollectableText.cs" t="Include" />
+            <e p="ShakePanel.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="CompanionController.cs" t="Include" />
             <e p="CompanionManager.cs" t="Include" />
             <e p="DashBehaviour.cs" t="Include" />
+            <e p="DisableAnimationHandle.cs" t="Include" />
+            <e p="DisablePlayer.cs" t="Include" />
             <e p="Healthbar.cs" t="Include" />
             <e p="Player.cs" t="Include" />
             <e p="PlayerAnimations.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
           </e>
+          <e p="RotateUISprite.cs" t="Include" />
+          <e p="Tavern.cs" t="Include" />
         </e>
         <e p="Seamless Textures (Realistic)" t="Include">
           <e p="Read Me.txt" t="Include" />
@@ -365,6 +454,31 @@
             </e>
           </e>
         </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
@@ -375,7 +489,7 @@
       </e>
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_Project Indie Game.795068681.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_Project Indie Game.-1486886869.00" t="ExcludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
   </component>
 </project>

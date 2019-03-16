@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class CompanionManager : MonoBehaviour
 {
-	[SerializeField]
-	private List<ACompanion> m_companions = new List<ACompanion>();
+	[SerializeField] private List<ACompanion> m_companions;
 
 	private ACompanion m_selectedCompanion;
 
@@ -17,6 +16,7 @@ public class CompanionManager : MonoBehaviour
 	{
 		m_companionCount = m_companions.Count;
 		SpawnCompanions();
+		Debug.Log(m_companionCount);
 
 		SelectCompanion(1);
 	}
@@ -176,8 +176,10 @@ public class CompanionManager : MonoBehaviour
 	{
 		for (int i = 0; i < m_companionCount; i++)
 		{
+			Debug.Log(i);
 			SpawnCompanion(m_companions[i]);
 			m_companions[i].IsInParty = true;
+			Debug.Log(m_companions[i].name);
 			m_companions[i].Index = i+1;
 		}
 	}

@@ -4,21 +4,20 @@ using UnityEngine;
 using UnityEngine.AI;
 public class EnemyMeleeState : AbstractState<EnemyFSM>
 {
-
+    private Animator m_animator;
     private EnemyFSM m_enemyFSM;
     private EnemyMeleeAttack m_enemyMeleeAttack;
     private Rigidbody m_rigidbody;
-    private NavMeshObstacle m_navMeshObstacle;
 
     void Awake()
     {
         m_enemyFSM = GetComponent<EnemyFSM>();
         m_rigidbody = GetComponent<Rigidbody>();
         m_enemyMeleeAttack = GetComponent<EnemyMeleeAttack>();
-        m_navMeshObstacle = GetComponent<NavMeshObstacle>();
-
-        m_navMeshObstacle.enabled = false;
+ 
         m_enemyMeleeAttack.OnAttackEnds += OnAttackEnds;
+
+        m_animator = GetComponent<Enemy>().animator;
     }
 
     private void OnAttackEnds(bool isPlayerDamaged)
@@ -42,7 +41,7 @@ public class EnemyMeleeState : AbstractState<EnemyFSM>
        
         m_rigidbody.constraints =  RigidbodyConstraints.FreezeRotationX |
             RigidbodyConstraints.FreezeRotationY| RigidbodyConstraints.FreezeRotationZ;
-
+        m_animator.SetBool("attack", true);
         m_enemyMeleeAttack.AttackPlayer();
     }
 
@@ -50,6 +49,7 @@ public class EnemyMeleeState : AbstractState<EnemyFSM>
     {
         base.Exit(pAgent);
         m_rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+        m_animator.SetBool("attack", false);
         StopAllCoroutines();
     }
 

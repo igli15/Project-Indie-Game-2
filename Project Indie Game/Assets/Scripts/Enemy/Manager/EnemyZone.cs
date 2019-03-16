@@ -9,11 +9,15 @@ public class EnemyZone : MonoBehaviour {
 
     private int m_numberOfActiveEnemies = 0;
     [Header("Safe to edit next varaibles")]
+    [SerializeField]
+    private float m_cooldown = 2;
     public bool m_destroyEnemiesAfterPlayerLeaves = true;
     public bool m_showPopUps = true;
     [Header("Dont edit next varaibles")]
     public bool isZoneCleared = false;
     public bool isPlayerInsideZone = false;
+
+    private bool m_isWaitingToSpawn = true;
 	void Awake () {
         m_spawners = new List<EnemySpawner>();
         //CallNextWave();
@@ -23,16 +27,29 @@ public class EnemyZone : MonoBehaviour {
 	void Update () {
         if (isZoneCleared) return;
 
-        if (m_numberOfActiveEnemies <= 0&&isPlayerInsideZone&& m_showPopUps)
+        if (m_numberOfActiveEnemies <= 0&&isPlayerInsideZone&& !m_isWaitingToSpawn)
         {
-            if (currentWaveIndex != -1)
+            if (currentWaveIndex != -1 && m_showPopUps)
             {
                 AchievementPopUp.QueueAchievement("Wave" + (currentWaveIndex + 1));
             }
 
-            CallNextWave();
+            StartCoroutine(SpawnNextWaveIn(m_cooldown));
         }
 	}
+
+    IEnumerator SpawnNextWaveIn(float seconds)
+    {
+        m_isWaitingToSpawn = true;
+        foreach (EnemySpawner spawner in m_spawners)
+        {
+            spawner.SpawnParticleEffect();
+        }
+        AudioManagerScript.instance.PlaySound("enemySpawn");
+
+        yield return new WaitForSecondsRealtime(seconds);
+        CallNextWave();
+    }
 
     public void CallNextWave()
     {
@@ -48,6 +65,7 @@ public class EnemyZone : MonoBehaviour {
             }
             m_numberOfActiveEnemies += temp;
         }
+        m_isWaitingToSpawn = false;
     }
 
     public void AddSpawner(EnemySpawner spawner)
@@ -58,8 +76,8 @@ public class EnemyZone : MonoBehaviour {
     private void OnTriggerEnter(Collider collider)
     {
         if (!collider.CompareTag("Player")) return;
-        
-        if(!isZoneCleared) CallNextWave();
+
+        if (!isZoneCleared) StartCoroutine(SpawnNextWaveIn(m_cooldown));
         isPlayerInsideZone = true;
 
     }

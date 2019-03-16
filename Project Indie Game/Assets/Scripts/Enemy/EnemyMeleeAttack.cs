@@ -50,7 +50,9 @@ public class EnemyMeleeAttack : MonoBehaviour
     {
         yield return new WaitForSeconds(reloadTime);
         m_attack = true;
+
         yield return new WaitForFixedUpdate();
+
         if (OnAttackEnds != null) OnAttackEnds(m_playerThere);
         m_playerThere = false;
         yield return null;

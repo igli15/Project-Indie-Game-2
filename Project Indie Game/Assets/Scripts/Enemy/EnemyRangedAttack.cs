@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemyRangedAttack : MonoBehaviour {
 
-
+    [SerializeField]
+    private Transform m_shootPosition;
     [SerializeField]
     private GameObject m_projectile;
 
@@ -30,7 +31,7 @@ public class EnemyRangedAttack : MonoBehaviour {
         direction.Normalize();
 
         GameObject newProjectile = ObjectPooler.instance.SpawnFromPool
-            (objectPoolTag, transform.position + transform.up, transform.rotation);
+            (objectPoolTag, m_shootPosition.position , transform.rotation);
 
         newProjectile.GetComponent<ProjectileBehaviour>().tag = objectPoolTag;
         Rigidbody rb =newProjectile.GetComponent<Rigidbody>();

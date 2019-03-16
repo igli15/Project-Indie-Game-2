@@ -6,12 +6,15 @@ public class EnemySpawner : MonoBehaviour {
 
     [SerializeField]
     private float m_spawnRadius = 1f;
-
+    [SerializeField]
+    private GameObject m_particleEffect;
     [SerializeField]
     private EnemyZone m_enemyZone;
     [SerializeField]
     private List<Wave> m_waves;
     
+    private GameObject m_localPartileEffect;
+
     private EnemyManager m_enemyManager;
     private List<Enemy> m_enemies;
     private int m_currentWaveIndex = -1;
@@ -21,6 +24,9 @@ public class EnemySpawner : MonoBehaviour {
         m_enemies = new List<Enemy>();
         m_enemyManager = EnemyManager.instance;
         m_enemyZone.AddSpawner(this);
+
+        m_localPartileEffect=Instantiate(m_particleEffect, transform.position, transform.rotation);
+        m_localPartileEffect.SetActive(false);
     }
 
     private void Update()
@@ -38,10 +44,18 @@ public class EnemySpawner : MonoBehaviour {
         m_waves.Add(newWave);
     }
 
+    public void SpawnParticleEffect()
+    {
+        if (m_currentWaveIndex+1 >= m_waves.Count) return;
+        if(m_waves[m_currentWaveIndex+1].numberOfTurrets+m_waves[m_currentWaveIndex+1].numberOfGoombas<=0) return;
+        m_localPartileEffect.SetActive(true);
+    }
+
     public int SpawnNextWave()
     {
         if (m_currentWaveIndex+1 >= m_waves.Count) return -1;
         m_currentWaveIndex++;
+                //TEST TES TEST TES TEST TE TEST
 
         m_enemies.Clear();
         SpawnGoomba(m_waves[m_currentWaveIndex].numberOfGoombas);
@@ -73,7 +87,9 @@ public class EnemySpawner : MonoBehaviour {
         spawnPosition.y = transform.position.y;
 
         GameObject newEnemy=ObjectPooler.instance.SpawnFromPool(tag, spawnPosition, transform.rotation);
-       
+
+
+
         newEnemy.GetComponent<Enemy>().onEnemyDestroyed += OnMyEnemyDestroyed;
         m_enemies.Add(newEnemy.GetComponent<Enemy>());
 
@@ -88,6 +104,7 @@ public class EnemySpawner : MonoBehaviour {
         {
             enemy.OnEnemyDestroyed(new Health());
         }
+        m_localPartileEffect.SetActive(false);
         m_enemies.Clear();
     }
 

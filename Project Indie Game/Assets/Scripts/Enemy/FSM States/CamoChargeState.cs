@@ -13,6 +13,8 @@ public class CamoChargeState : AbstractState<EnemyFSM>
     private Vector3 m_departurePos;
 
     [SerializeField]
+    private float m_estimatedTimeOfCharge = 4;
+    [SerializeField]
     private float m_damage = 1;
     [SerializeField]
     private float m_pushForce = 2;
@@ -35,6 +37,8 @@ public class CamoChargeState : AbstractState<EnemyFSM>
 
     void Update()
     {
+       
+
         if (Vector3.Distance(m_departurePos, transform.position) > m_distance)
         {
             Debug.Log("STOP");
@@ -43,6 +47,7 @@ public class CamoChargeState : AbstractState<EnemyFSM>
         }
         else
         {
+           
             m_rigidbody.velocity = m_direction * m_speed;
         }
     }
@@ -53,18 +58,32 @@ public class CamoChargeState : AbstractState<EnemyFSM>
         //Debug.Log("Enemy is null => " + (m_enemy == null));
         //Debug.Log("RigidBody is null => " + (m_rigidbody == null));
         m_direction = m_enemy.direction;
+        
+            //Vector3.Angle(Vector3.zero, m_direction);
         Debug.Log("ENTER CHARGE STATE ||| DIR: " + m_direction);
 
         m_departurePos = transform.position;
 
+        StartCoroutine(CheckOnTime());
+
         m_rigidbody.velocity = m_direction * m_speed;
         m_isCollidedWithplayer = false;
+        m_enemy.SetRushParticlesActive(true);
+    }
+
+    IEnumerator CheckOnTime()
+    {
+        yield return new WaitForSecondsRealtime(m_estimatedTimeOfCharge);
+        Debug.Log("TIME_OUT_CAMOUFLAGE_GUY");
+        m_enemyFSM.fsm.ChangeState<CamoAmbushState>();
     }
 
     public override void Exit(IAgent pAgent)
     {
         base.Exit(pAgent);
+        StopAllCoroutines();
         Debug.Log("EXIT CHARGE STATE");
+        m_enemy.SetRushParticlesActive(false);
     }
 
 

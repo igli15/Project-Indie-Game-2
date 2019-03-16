@@ -7,6 +7,9 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
     private Health m_health;
     private Camouflage m_enemy;
     private EnemyFSM m_enemyFSM;
+    private Rigidbody m_rigidbody;
+
+    
 
     [SerializeField]
     private float m_timeTransformToAmbsuh = 1;
@@ -26,6 +29,7 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
         m_health = GetComponent<Health>();
         m_enemyFSM = GetComponent<EnemyFSM>();
         m_enemy = GetComponent<Camouflage>();
+        m_rigidbody = GetComponent<Rigidbody>();
         m_enemy.sphereCollider.OnEnemyTriggerStay += OnSphereTriggerStay;
     }
 
@@ -33,18 +37,23 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
     {
         if (m_isUnderGround)
         {
-            //Debug.Log("TIME " + Time.time+" / "+(m_startTimeOfAmbush + m_minTimeOfAmbush) );
+
+        }
+        else
+        {
+           // Quaternion toRotation = Quaternion.LookRotation(transform.forward, );
+           // transform.rotation = Quaternion.Lerp(transform.rotation, toRotation, speed * Time.time);
         }
     }
 
     void HideUnderground()
     {
-        transform.position += transform.up * 0.6f;
+        //transform.position += transform.up * 0.6f;
     }
 
     void LeaveUnderground()
     {
-        transform.position += -transform.up * 0.6f;
+        //transform.position += -transform.up * 0.6f;
     }
 
     public override void Enter(IAgent pAgent)
@@ -52,14 +61,21 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
         base.Enter(pAgent);
         StopAllCoroutines();
         Debug.Log("ENTER AMBUSH STATE");
+
         StartCoroutine(TransformToAmbush());
     }
 
     IEnumerator TransformToAmbush()
     {
         Debug.Log("START Transform to ambush");
+        //Debug.Log("ENEMY = null "+ (m_enemy==null));
+        if (m_enemy == null) m_enemy = GetComponent<Camouflage>();
+        m_enemy.animator.SetBool("attack", false);
+
         m_isCollidedWithPlayer = true;
+
         yield return new WaitForSeconds(m_timeTransformToAmbsuh);
+
         m_startTimeOfAmbush = Time.time;
         m_isUnderGround = true;
         m_isCollidedWithPlayer = false;
@@ -74,20 +90,23 @@ public class CamoAmbushState : AbstractState<EnemyFSM>
     {
         Debug.Log("START Transform OUT OF ambush: " + Time.time);
 
-
+        m_enemy.SetUnborrowParticlesActive(true);
         m_health.CanTakeDamage = true;
         m_isUnderGround = false;
         HideFromCompanions(true);
+        m_enemy.animator.SetBool("attack", true);
+
+        transform.LookAt(targetTransform);
 
         yield return new WaitForSeconds(m_timeTransformOutOfAmbush);
 
+        transform.LookAt(targetTransform);
         Vector3 dir = targetTransform.position - transform.position;
         dir = new Vector3(dir.x, 0, dir.z);
         dir.Normalize();
-
         Debug.Log("END Transform OUT OF ambush");
         m_enemy.direction = dir;
-
+        m_enemy.SetUnborrowParticlesActive(false);
         m_enemyFSM.fsm.ChangeState<CamoChargeState>();
         yield return null;
     }

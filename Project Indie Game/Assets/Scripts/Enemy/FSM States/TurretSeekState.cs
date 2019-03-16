@@ -23,12 +23,12 @@ public class TurretSeekState : EnemySeekState {
 
     private void OnPlayerStaySpehere(Collider collider)
     {
-        if (collider.CompareTag("Player")) m_enemyFSM.fsm.ChangeState<TurretShootState>();
+        if (collider.CompareTag("Player")&&enabled) m_enemyFSM.fsm.ChangeState<TurretShootState>();
     }
 
     public override void Enter(IAgent pAgent)
     {
-        Debug.Log("ENTER SEEK STATE");
+        //Debug.Log("ENTER SEEK STATE");
         base.Enter(pAgent);
         m_enemyMovement.navMeshAgent.enabled = true;
         m_enemyMovement.pushIsEnabled = true;
@@ -41,7 +41,7 @@ public class TurretSeekState : EnemySeekState {
     {
         
         base.Exit(pAgent);
-
+        //Debug.Log("EXIT SEEK STATE");
         //SLOW DOWN BEFORE ATTACK, KEK
         m_enemyMovement.navMeshAgent.velocity = Vector3.zero;
         GetComponent<Rigidbody>().velocity = Vector3.zero;

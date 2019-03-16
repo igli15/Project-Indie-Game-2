@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -20,11 +21,11 @@ public class SniperCompanion : Companion
 	
 	private GameObject m_targetEnemy;
 
-	private Player m_player;
-
-	private float m_playerInitSpeed;
 
 	private Collider m_collider;
+
+	public Action<SniperCompanion> OnTargetHit;
+	public Action<SniperCompanion> OnPiercingHit;
 	
 	
 	private void Awake()
@@ -36,10 +37,7 @@ public class SniperCompanion : Companion
 	// Use this for initialization
 	void Start ()
 	{
-		m_player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-		m_playerInitSpeed = m_player.MoveSpeed;
-		
-		OnStartCharging += delegate(ACompanion companion) {m_player.MoveSpeed -= m_playerSlowAmount;};
+
 	}
 	
 	void Update () 
@@ -61,19 +59,18 @@ public class SniperCompanion : Companion
 	{
 		m_collider.enabled = false;
 		m_targetEnemy = null;
-		m_player.MoveSpeed = m_playerInitSpeed;
+
 		base.Reset();
 	}
 
 	public override void Throw(Vector3 dir)
 	{
 		m_collider.enabled = true;
-		m_player.MoveSpeed = m_playerInitSpeed;
 		
 		base.Throw(dir.normalized);
 		RaycastHit[] hits;
 		
-		hits = Physics.RaycastAll(transform.position, dir.normalized,dir.magnitude).OrderBy(d=>d.distance).ToArray();
+		hits = Physics.RaycastAll(transform.position, dir.normalized,m_throwRange).OrderBy(d=>d.distance).ToArray();
 
 		for (int i = 0; i < hits.Length; i++)
 		{	
@@ -83,6 +80,7 @@ public class SniperCompanion : Companion
 			}
 			if (hits[i].transform.CompareTag("Enemy"))
 			{
+                AudioManagerScript.instance.PlaySound("companionHit");
 				m_targetEnemy = hits[i].transform.gameObject;
 			}
 		}
@@ -97,11 +95,13 @@ public class SniperCompanion : Companion
 			{
 				if (other.transform == m_targetEnemy.transform)
 				{
+					if(OnTargetHit != null)OnTargetHit(this);
 					other.GetComponent<Health>().InflictDamage(m_fullDamage);
 					m_manager.DisableCompanion(this);
 				}
 				else
 				{
+					if(OnPiercingHit != null) OnPiercingHit(this);
 					other.GetComponent<Health>().InflictDamage(m_piercingDamage);
 				}
 			}

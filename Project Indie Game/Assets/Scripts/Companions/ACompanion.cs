@@ -44,6 +44,7 @@ public abstract class ACompanion : MonoBehaviour
 	public Action<ACompanion> OnRangeReached;
 	public Action<ACompanion> OnStartCharging;
 	public Action<ACompanion,float> OnCharging;
+	public Action<ACompanion,float> OnChargeInterrupted;
 	public Action<ACompanion> OnDropped;
 	public Action<ACompanion> OnPicked;
 

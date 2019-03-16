@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {			
@@ -33,8 +34,11 @@ public class Health : MonoBehaviour
         {
             if (OnHealthDecreased != null) OnHealthDecreased(this);
             m_health -= damageAmount;
+
         }
-	}
+       // else Debug.Log("DAMAGE IGNORE");
+
+    }
 	
 	public void HealUp(float healAmount)
 	{
@@ -55,8 +59,9 @@ public class Health : MonoBehaviour
 	{
 		if (m_health <= 0)
 		{
-			if(OnDeath != null)	OnDeath(this);
-			m_canTakeDamage = false;
+            m_canTakeDamage = false;
+            if (OnDeath != null)	OnDeath(this);
+
 			if (m_shouldBeDestroyed)
 			{
 				Destroy(gameObject);

@@ -8,6 +8,9 @@ public class ProjectileBehaviour : MonoBehaviour {
 
     [SerializeField]
     private float m_damage=1;
+
+
+
     private Vector3 m_distancePerFrame;
 	void Start () {
         m_distancePerFrame = Vector3.zero;
@@ -26,13 +29,16 @@ public class ProjectileBehaviour : MonoBehaviour {
 
     private void OnTriggerEnter(Collider collider)
     {
-
+        
         if (collider.CompareTag("Player"))
         {
             collider.GetComponent<Health>().InflictDamage(m_damage);
+            AudioManagerScript.instance.PlaySound("turretHit");
             ObjectPooler.instance.DestroyFromPool(tag, gameObject);
+
         }
-        if (!collider.CompareTag("Obstacle") ) return;
+        if (!collider.CompareTag("projectileObstacle") ) return;
         ObjectPooler.instance.DestroyFromPool(tag, gameObject);
+        AudioManagerScript.instance.PlaySound("turretHit");
     }
 }

@@ -15,9 +15,8 @@ public class EnemyLoot : MonoBehaviour {
         float rnd=Random.Range(0, 100);
         if (rnd < percantageOfDroping)
         {
-            Debug.Log("DROP");
+
             Instantiate(m_itemToDrop, transform.position, transform.rotation);
         }
-        else Debug.Log("FAIL");
     }
 }
